@@ -8,12 +8,13 @@ import { Cards } from "@/components/cards/Cards";
 export default function Home() {
   return (
     <div >
-      <div className={`flex flex-col ${styles.bag2}`}>
+      <div className={`flex flex-col `}>
         <Redes/>
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-16"/>
       </div>
-      <div className={`w-full`} id="comunicacion">
+      <div className={`w-full ${styles.bag2}`} id="comunicacion">
         <Bento />
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
         {/* <div className="w-full p-[0.2px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent my-8 mt-16" /> */}
       </div>
       <div className={`mt-16`} id="connections">

@@ -6,8 +6,8 @@ const Bento = () => {
   const bigBentoPart = 'col-span-6 h-90 w-full rounded-2xl';
   const smallBentoPart = 'col-span-4 h-90 w-full rounded-2xl';
   return (
-    <div className={`w-full bg-gray-400`}>
-      <div className={`${styles.contenedor} py-8 z-10 bg-white px-4`}>
+    <div className={`w-full`}>
+      <div className={`${styles.contenedor} py-8 px-4`}>
         <div className={`${styles.cajon}`}>
           <h2 className='text-xl text-blue-800 '>Medios de comunicacion</h2>
           <p className='text-3xl text-slate-900 mb-8'>¿Como se conectan los dispositivos a internet?</p>
