@@ -5,12 +5,12 @@ import styles from '../../app/page.module.css'
 export const Card = ( {image, texto, content} ) => {
   return (
     <div className={`w-120 h-96 rounded-md relative`}>
-      <div className='text-white absolute z-40 bottom-0 left-4'>
-        <h2>{texto}</h2>
-        <p>{content}</p>
+      <div className='text-white absolute z-40 bottom-4 text-justify px-4'>
+        <h2 className='text-slate-300'>{texto}</h2>
+        <p className='font-extralight'>{content}</p>
       </div>
       <div className={`w-120 h-96 relative `}>
-        <div className={`absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-40% via-black/20 to-black/80 rounded-2xl ${styles.shadow}`}></div>
+        <div className={`absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-10% via-black/60 to-black/80 rounded-2xl ${styles.shadow}`}></div>
         <Image 
         src={image}
         // width={'auto'}

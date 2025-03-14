@@ -14,7 +14,7 @@ const Header = () => {
             width={58}
             alt='Logo de la Universidad Politecnica Territorial de Caracas "Mariscal Sucre"'
           />
-          <p className='text-center ml-4 font-bold'>Universidad Politecnica Territorial de Caracas "Mariscal Sucre"</p>
+          <p className='text-center ml-4 font-bold'>Universidad Politécnica Territorial de Caracas "Mariscal Sucre"</p>
         </div>
         <div className='flex'>
           {/* <div className='w-auto rounded-full flex items-center font-bold text-[20px] text-slate-600 hover:text-rose-500'>
