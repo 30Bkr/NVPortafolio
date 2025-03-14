@@ -5,7 +5,7 @@ import Perfil from '../perfil/Perfil'
 
 const Header = () => {
   return (
-    <div className={`grid grid-flow-col grid-rows-3 h-44 text-slate-800 bg-slate-100` }>
+    <div className={`grid grid-flow-col grid-rows-3 h-44 text-slate-800 bg-slate-100 ${styles.font}` }>
       <div className={`row-span-2 flex justify-between items-center ${styles.this} ${styles.header2}`}>
         <div className='flex items-center w-68'>
           <Image 
@@ -36,16 +36,16 @@ const Header = () => {
       <div className={`flex items-center ${styles.header} `}>
         <ul className='flex'>
           <li className='mx-5'>
-            <button className='cursor-pointer  hover:text-rose-500  font-semibold text-[24px]'>Inicio</button>
+            <button className={`cursor-pointer  hover:text-rose-500  font-medium text-[18px] ${styles.font}`}>Inicio</button>
           </li>
           <li className='mx-5 cursor-pointer'>
-            <button className='cursor-pointer  hover:text-rose-500  font-semibold text-[24px]'>Redes</button>
+            <button className='cursor-pointer  hover:text-rose-500  font-medium text-[18px]'>Redes</button>
           </li>
           <li className='mx-5 cursor-pointer'>
-            <button className='cursor-pointer  hover:text-rose-500  font-semibold text-[24px]'>Comunicaciones</button>
+            <button className='cursor-pointer  hover:text-rose-500  font-medium text-[18px]'>Comunicaciones</button>
           </li>
           <li className='mx-5 cursor-pointer'>
-            <button className='cursor-pointer  hover:text-rose-500  font-semibold text-[24px]'>Infraestructura</button>   
+            <button className='cursor-pointer  hover:text-rose-500  font-medium text-[18px]'>Infraestructura</button>   
           </li>
         </ul>
       </div>

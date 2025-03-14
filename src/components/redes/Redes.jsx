@@ -9,9 +9,9 @@ const Redes = () => {
       <div className={`${styles.contenedor} flex justify-around`}>
         <div className={`grid-cols-2 flex flex-col px-20 justify-center`}>
           <h2 className='text-xl text-blue-800'>Redes informaticas</h2>
-          <p className='text-3xl text-slate-900 mb-4'>¿Por qué es importante saber sobre las redes informaticas?</p>
-          <p className='text-gray-600'>las redes informaticas se han convertido en un componente esencial para la comunicación y el intercambio de datos entre dispositivos, sistemas y personas. Aquí podrás conocer: </p>
-          <ul className='text-gray-600 list-disc list-inside list-(var())'>
+          <p className='text-3xl text-slate-900 font-semibold mb-4'>¿Por qué es importante saber sobre las redes informaticas?</p>
+          <p className='text-gray-900 '>las redes informaticas se han convertido en un componente esencial para la comunicación y el intercambio de datos entre dispositivos, sistemas y personas. Aquí podrás conocer: </p>
+          <ul className='text-gray-900 mt-4  list-disc list-inside list-(var())'>
             <li>Elementos</li>
             <li>Medios de comunicación</li>
             <li>Transmision de datos</li>
