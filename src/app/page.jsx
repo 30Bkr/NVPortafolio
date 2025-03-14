@@ -7,30 +7,18 @@ import { Cards } from "@/components/cards/Cards";
 
 export default function Home() {
   return (
-    <div className={styles.contenedor}>
-      <section className="flex flex-col">
+    <div >
+      <div className={`flex flex-col ${styles.bag2}`}>
         <Redes/>
-      </section>
-      <section className="w-full h-dvh mt-8" id="comunicacion">
-        {/* <div className="grid grid-flow-row-dense grid-cols-10 grid-rows-2 gap-4" id="bento">
-          <div className="col-span-6 bg-blue-400 h-90 w-full rounded-md">
-            hola
-          </div>
-          <div className="col-span-4 bg-red-600 h-90 w-full rounded-md">
-            hola2
-          </div>
-          <div className="col-span-4 bg-amber-500 h-90 w-full rounded-md">
-            hol3
-          </div>
-          <div className="col-span-6 bg-green-400 h-90 w-full rounded-md">
-            hola4
-          </div>
-        </div> */}
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-16"/>
+      </div>
+      <div className={`w-full`} id="comunicacion">
         <Bento />
-      </section>
-      <section className="mt-24" id="connections">
+        {/* <div className="w-full p-[0.2px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent my-8 mt-16" /> */}
+      </div>
+      <div className={`mt-16`} id="connections">
         <Cards />
-      </section>
+      </div>
     </div>
   );
 }

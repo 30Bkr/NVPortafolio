@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 
 const Header = () => {
   return (
-    <div className={`grid grid-flow-col grid-rows-3 mb-12 h-44` }>
+    <div className={`grid grid-flow-col grid-rows-3 h-44` }>
       <div className={`row-span-2 flex justify-between items-center ${styles.this} ${styles.header2}`}>
         <div>
           Imagen 

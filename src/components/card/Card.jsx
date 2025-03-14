@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import styles from '../../app/page.module.css'
 
 export const Card = ( {image, texto, content} ) => {
   return (
@@ -9,7 +10,8 @@ export const Card = ( {image, texto, content} ) => {
         <p>{content}</p>
       </div>
       <div className={`w-120 h-96 relative `}>
-        <div className="absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-40% via-black/20 to-black/80 rounded-2xl"></div>
+import styles from '../../app/page.module.css'
+        <div className={`absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-40% via-black/20 to-black/80 rounded-2xl ${styles.shadow}`}></div>
 
         <Image 
         src={image}
@@ -18,7 +20,7 @@ export const Card = ( {image, texto, content} ) => {
         fill
         // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         alt="Any picture of network"
-        className='rounded-2xl'
+        className='rounded-2xl shadow-md'
         />
       </div>
 
