@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Header.module.css'
 import Image from 'next/image'
+import Perfil from '../perfil/Perfil'
 
 const Header = () => {
   return (
@@ -15,8 +16,21 @@ const Header = () => {
           />
           <p className='text-center ml-4'>Universidad Politecnica Territorial de Caracas "Mariscal Sucre"</p>
         </div>
-        <div>
-          presentaciones de cada uno de nosotros
+        <div className='flex'>
+          {/* <div className='w-auto rounded-full flex items-center font-bold text-[20px] text-slate-600 hover:text-rose-500'>
+            <div className='w-16 h-16 relative border-3 border-gray-500 rounded-full'>
+              <Image 
+                src={'/lys.jpeg'}
+                fill
+                alt='Neudelys'
+                className='rounded-full'
+              />
+            </div>
+            <h2 className='mx-4 '>Neudelys Solano</h2>
+          </div> */}
+          <Perfil name={'Briant Carrillo'} image={'/lys.jpeg'}/>
+          <Perfil name={'Neudelys Solano'} image={'/lys.jpeg'}/>
+          <Perfil name={'Yusmely Araque'} image={'/lys.jpeg'}/>
         </div>
       </div>
       <div className={`flex items-center ${styles.header} `}>
