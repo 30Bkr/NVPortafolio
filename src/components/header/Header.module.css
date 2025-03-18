@@ -1,8 +1,13 @@
 .header{
   width: 100%;
-  padding: 0px 200px 0px 200px;
+  padding: 0px 140px 0px 140px;
+  background: rgb(32, 32, 32);
+  color: white;
   animation: blur linear both ;
   box-shadow: 1px 4px 10px -6px black;
+  position: fixed;
+  z-index: 100;
+  height: 62px;
   animation-timeline: scroll();
   animation-range: 0 232px;
 }
@@ -11,16 +16,15 @@
 }
 @keyframes blur {
   to{
-    position: fixed;
-    height: 57px;
     z-index: 100;
+    color: white;
     box-shadow: 0px 5px 50px -5px rgba(0,0,0,.1);
     box-shadow: 0px 0px 0px 1px rgba(0,0,0,.3);
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.8);
     backdrop-filter: blur(10px);
   }
 }
-.header2{
+/* .header2{
   width: 100%;
   padding: 0px 200px 0px 200px;
   animation: blur2 linear both ;
@@ -34,4 +38,4 @@
     background: rgba(0,0,0,.3);
     backdrop-filter: blur(10px);
   }
-}
+} */

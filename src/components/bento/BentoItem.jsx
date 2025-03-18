@@ -5,7 +5,7 @@ export const BentoItem = ({ estilo, title, image, content, barra }) => {
     <div className={`${estilo} relative overflow-hidden`}>
       <div className='absolute z-20 bottom-4 px-4 text-white'>
         <h2 className='font-semibold mb-4'>{title}</h2>
-        <p className='font-light'>{content} <a href="/medios/#lineas">Ver mas.</a></p>
+        <p className='font-light'>{content} <a href="/medios/#lineas">Ver más.</a></p>
       </div>
       <div className={`${estilo} relative transition delay-150 duration-1000 ease-in-out hover:scale-110 `}>
 

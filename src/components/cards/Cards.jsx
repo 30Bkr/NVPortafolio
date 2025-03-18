@@ -9,8 +9,8 @@ export const Cards = () => {
       <div className={`${styles.contenedor}`}>
         <div className={`${styles.cajon}`}>
           <h2 className='text-xl text-blue-800 mb-4'>Expande tu conocimiento</h2>
-          <p className='text-3xl text-slate-900 mb-8'>¿Te gustaria saber mas sobre la infraestructura y reglas de las redes?</p>
-          <p className='text-gray-600'>En este apartado encontraras todo sobre conectores, protocoles, normas y tecnologias de redes</p>
+          <p className='text-3xl text-slate-900 mb-8'>¿Te gustaría saber más sobre la infraestructura y reglas de las redes?</p>
+          <p className='text-gray-600'>En este apartado encontrarás todo sobre conectores, protocoles, normas y tecnologías de redes</p>
         </div>
         <div className='grid grid-cols-4 gap-4'>
           <CardsItems />

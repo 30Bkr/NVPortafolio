@@ -10,7 +10,7 @@ export const Card = ( {image, texto, content} ) => {
         <p className='font-extralight'>{content}</p>
       </div>
       <div className={`w-120 h-96 relative `}>
-        <div className={`absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-10% via-black/60 to-black/80 rounded-2xl ${styles.shadow}`}></div>
+        {/* <div className={`absolute z-10 bottom-0 top-0 w-full h-full bg-gradient-to-b from-transparent from-10% via-black/60 to-black/80 rounded-2xl ${styles.shadow}`}></div> */}
         <Image 
         src={image}
         // width={'auto'}

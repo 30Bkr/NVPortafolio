@@ -7,7 +7,7 @@ import { Cards } from "@/components/cards/Cards";
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <div className={`flex flex-col `}>
         <Redes/>
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-16"/>
