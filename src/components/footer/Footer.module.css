@@ -1,0 +1,17 @@
+.footer{
+  height: 62px;
+  background: rgb(32, 32, 32);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preFooter{
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  background-color: #0f172a;
+  color: white;
+}

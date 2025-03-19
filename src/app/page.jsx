@@ -4,6 +4,7 @@ import styles from './page.module.css'
 import Redes from "@/components/redes/Redes";
 import Bento from "@/components/bento/Bento";
 import { Cards } from "@/components/cards/Cards";
+import PreFooter from "@/components/footer/PreFooter";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <div className={`mt-16`} id="connections">
         <Cards />
       </div>
+      <PreFooter />
     </div>
   );
 }
