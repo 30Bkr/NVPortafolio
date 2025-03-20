@@ -3,18 +3,17 @@ import { BentoItem } from './BentoItem'
 import styles from '../../app/page.module.css'
 
 const Bento = () => {
-  const bigBentoPart = 'col-span-6 h-90 w-full rounded-2xl text-justify';
-  const smallBentoPart = 'col-span-4 h-90 w-full rounded-2xl text-justify';
+  const bigBentoPart = 'lg:col-span-6 lg:h-90 lg:w-full lg:rounded-2xl lg:text-justify';
+  const smallBentoPart = 'col-span-4 lg:h-90 lg:w-full h-70 w-full lg:rounded-2xl lg:text-justify';
   return (
     <div className={`w-full`}>
-      <div className={`${styles.contenedor} py-8 px-4`}>
+      <div className={`${styles.contenedor} lg:py-8 lg:px-4 p-8`}>
         <div className={`${styles.cajon}`}>
           <h2 className='text-xl text-blue-800 '>Medios de comunicación</h2>
           <p className='text-3xl text-slate-900 mb-8'>Conexiones invisibles: El viaje de tus datos a través de la red</p>
           <p className='text-gray-600'>¿Alguna vez te has preguntado cómo viaja la información desde tu dispositivo hasta el mundo digital? Descubre los secretos detrás de las líneas de comunicación, los medios de conexión y los tipos de cables que hacen posible la magia de internet.</p>
         </div>
-        <div className={`grid grid-flow-row-dense grid-cols-10 grid-rows-2 gap-4`}>
-          
+        <div className={`lg:grid lg:grid-flow-row-dense lg:grid-cols-10 lg:grid-rows-2 gap-4 flex flex-col`}>
           <BentoItem estilo={bigBentoPart} title={'¡Descubre el Poder de las Líneas de Comunicación en Redes!'} image={'/lineas.jpg'}
             content={'Imagina un mundo donde la información fluye sin barreras, donde cada dispositivo, desde tu teléfono hasta tu computadora, está interconectado, compartiendo datos en un abrir y cerrar de ojos. Las líneas de comunicación en redes son el corazón de esta realidad...'}
             barra={'/comunicaciones#lineas'}

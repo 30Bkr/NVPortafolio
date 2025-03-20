@@ -47,25 +47,25 @@ export default function Page() {
           <p>Clasificándose en:</p>
           <ul className='list-disc list-inside'>
             <li>
-              <strong>Líneas privadas:</strong>Su propietario no es público, por eso la línea es propiedad del poseedor de la red.
+              <strong>Líneas privadas:</strong> Su propietario no es público, por eso la línea es propiedad del poseedor de la red.
             </li>
             <li>
-              <strong>Líneas públicas:</strong>Son del público como las compañías telefónicas. Su usuario contrata los servicios de comunicación con la compañía que le suministra la línea.
+              <strong>Líneas públicas:</strong> Son del público como las compañías telefónicas. Su usuario contrata los servicios de comunicación con la compañía que le suministra la línea.
             </li>
             <li>
-              <strong>Líneas conmutadas:</strong>Permite la comunicación con todas las partes que tengan acceso a la red telefónica pública conmutada.
+              <strong>Líneas conmutadas:</strong> Permite la comunicación con todas las partes que tengan acceso a la red telefónica pública conmutada.
             </li>
             <li>
-              <strong>Líneas dedicadas:</strong>También se denominan enlaces de punto a punto porque la ruta establecida es permanente y fija.
+              <strong>Líneas dedicadas:</strong> También se denominan enlaces de punto a punto porque la ruta establecida es permanente y fija.
             </li>
             <li>
-              <strong>Líneas digitales:</strong>En este tipo de línea, los bits son transmitidos en forma de señales digitales. Cada bit se representa por una variación de voltaje y esta se realiza mediante codificación digital.
+              <strong>Líneas digitales:</strong> En este tipo de línea, los bits son transmitidos en forma de señales digitales. Cada bit se representa por una variación de voltaje y esta se realiza mediante codificación digital.
             </li>
             <li>
-              <strong>Líneas de punto a punto:</strong>Enlazan dos DTE.
+              <strong>Líneas de punto a punto:</strong> Enlazan dos DTE.
             </li>
             <li>
-              <strong>Líneas multipunto:</strong>Enlazan tres o más DTE.
+              <strong>Líneas multipunto:</strong> Enlazan tres o más DTE.
             </li>
             <p>{`(DTE: Equipo Terminal de Datos, son dispositivos que se encargan de mostrar información, generar o almacenar datos para el usuario. Son los puntos de inicio y final del flujo de datos de una red).`}</p>
           </ul>
