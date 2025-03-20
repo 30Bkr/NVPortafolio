@@ -390,31 +390,244 @@ export default function Page() {
           </ul>
           <p>A continuación se observa la comparación entre estas normas:</p>
           <Image 
-            width={100}
-            height={100}
-            alt='Normas de algo'
-            className=''
             src={'/normasFinal.jpeg'}
+            width={220}
+            height={180}
+            alt='Normas de algo'
+            className='w-120 h-200'
           />
         </div>
+
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+
+        <div id='banda'>
+          <h2>Ancho de banda</h2>
+          <p>{`El ancho de banda, en términos de redes, se refiere a la capacidad máxima de una conexión de red para transmitir datos en un período de tiempo determinado. Se mide en bits por segundo (bps) y sus múltiplos, como kilobits por segundo (kbps), megabits por segundo (Mbps) o gigabits por segundo (Gbps).
+          Una forma común de entender el ancho de banda es compararlo con una tubería de agua. Una tubería más ancha puede transportar más agua al mismo tiempo, de la misma  manera que un mayor ancho de banda permite transmitir más datos simultáneamente.
+          `}</p>
+          <h3>Características:</h3>
+          <ul className='list-disc list-inside  '>
+              <li><strong>Limitación física:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>
+                  El ancho de banda está limitado por las capacidades físicas del medio de transmisión, como cables, fibra óptica o señales inalámbricas.
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Influencia en la velocidad:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>
+                  Un mayor ancho de banda generalmente se traduce en velocidades de transferencia más rápidas y una mejor experiencia en línea.
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Compartición:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>
+                  En redes compartidas, el ancho de banda disponible se divide entre los usuarios conectados, lo que puede afectar el rendimiento individual.
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Relación con la latencia:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>
+                  Aunque son conceptos distintos, el ancho de banda y la latencia están relacionados. La latencia se refiere al retraso en la transmisión de datos, y un ancho de banda insuficiente puede aumentar la latencia.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h3>Medicion del ancho de banda</h3>
+            <p>El ancho de banda se mide utilizando herramientas y técnicas especializadas, que incluyen:</p>
+            <ul className='list-disc list-inside'>
+              <li><strong>Pruebas de velocidad en línea:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Sitios web y aplicaciones que permiten medir la velocidad de carga y descarga de una conexión a Internet.</li>
+                </ul>
+              </li>
+              <li><strong>Monitoreo de red:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Software y hardware que supervisan el tráfico de red y proporcionan información sobre el ancho de banda utilizado.</li>
+                </ul>
+              </li>
+              <li><strong>Analizadores de espectro:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Equipos utilizados para medir el ancho de banda de señales inalámbricas.</li>
+                </ul>
+              </li>
+            </ul>
+            <h3>Tasa de transferencia</h3>
+            <p>{`La tasa de transferencia, también conocida como rendimiento, se refiere a la cantidad real de datos que se transmiten con éxito a través de una conexión en un período de tiempo. Se mide en las mismas unidades que el ancho de banda (bps, kbps, Mbps, Gbps).`}</p>
+            <h3>Diferencia entre ancho de banda y tasa de transferencia:</h3>
+            <ul className='list-disc list-inside'>
+              <li><strong>Ancho de banda:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Es la capacidad máxima teórica de una conexión.</li>
+                </ul>
+              </li>
+              <li><strong>Tasa de transferencia:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Es la cantidad real de datos transmitidos, que puede ser menor que el ancho de banda debido a factores como la congestión de la red, la latencia o la pérdida de paquetes.</li>
+                </ul>
+              </li>
+            </ul>
+            <h3>Importancia</h3>
+            <p>El ancho de banda es un factor crucial para el rendimiento de las redes y la experiencia del usuario. Un ancho de banda adecuado es esencial para actividades como:</p>
+            <ul className='list-disc list-inside'>
+              <li>
+                <strong>Navegación web:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Carga rápida de páginas web y contenido multimedia.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Transmisión de video y audio:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Reproducción fluida de contenido en alta definición.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Videoconferencias:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Comunicación en tiempo real sin interrupciones.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Descarga y carga de archivos:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Transferencia rápida de datos.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Juegos en línea:</strong>
+                <ul className='list-disc list-inside'>
+                  <li>Experiencia de juego sin retrasos.</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+        <div id='redes'>
+          <h2>Tecnologias de redes</h2>
+          <p>Las tecnologías de redes son el conjunto de hardware y software que permiten a los dispositivos comunicarse e intercambiar datos entre sí. Estas tecnologías abarcan una amplia gama de métodos y protocolos, desde las conexiones por cable tradicionales hasta las redes inalámbricas más modernas.</p>
+          <p>Podemos compararlas de la siguiente manera:</p>
+          <Image
+            src={'/final.jpeg'}
+            width={100}
+            height={100}
+            alt='Tecnologias de redes'
+            className='w-120 h-140'
+          />
+          <ul className='list-decimal list-inside'>
+            <li>
+              <strong>Token Ring</strong>
+              <p>{`Es una tecnología de red que utiliza una topología en anillo lógico.${<br></br>}Los datos se transmiten alrededor del anillo en un "token", y solo el nodo que posee el token puede transmitir datos.${<br></br>}Fue desarrollada por IBM en la década de 1980 y fue popular en redes de área local (LAN) en ese momento.`}</p>
+              <ul>
+                <li>
+                  <strong>Caracteristicas:</strong>
+                  <ul className='list-disc list-inside'>
+                    <li>Acceso determinista al medio: evita colisiones de datos.</li>
+                    <li>Alta confiabilidad en redes con poco tráfico.</li>
+                    <li>Complejidad en la instalación y mantenimiento.</li>
+                    <li>Velocidades de transmisión limitadas en comparación con tecnologías modernas.</li>
+                  </ul>
+                </li>
+                <li><strong>Capas del modelo OSI:</strong>
+                  <ul className='list-disc list-inside'>
+                    <li>{`Capa física (Physical Layer): Define las características eléctricas y mecánicas de la conexión.`}</li>
+                    <li>
+                      {`Capa de enlace de datos (Data Link Layer): Controla el acceso al medio y la transmisión de tramas.`}
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Ethernet</strong>
+              <p>{`Es la tecnología de red LAN más utilizada en la actualidad.${<br></br>}Utiliza una topología en estrella física y un protocolo de acceso al medio llamado CSMA/CD (Carrier Sense Multiple Access with Collision Detection) o CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) en versiones más modernas.${<br></br>}Permite la transmisión de datos a altas velocidades y es altamente escalable.`}</p>
+              <ul>
+                <li>
+                  <strong>Caracteristicas</strong>
+                  <ul className='list-disc list-inside'>
+                    <li>Alta velocidad y rendimiento.
+                    </li>
+                    <li>Flexibilidad y escalabilidad.</li>
+                    <li>Amplia disponibilidad de equipos y componentes.</li>
+                    <li>{`Posibilidad de colisiones de datos en versiones antiguas (CSMA/CD).`}</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Capas del modelo OSI</strong>
+                  <ul className='list-disc list-inside'>
+                    <li>
+                      {`Capa física (Physical Layer): Define las características de la conexión física.`}
+                    </li>
+                    <li>
+                      {`Capa de enlace de datos (Data Link Layer): Controla el acceso al medio y la transmisión de tramas.`}
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Wi-Fi</strong>
+              <p>{`Es una tecnología de red inalámbrica que permite la conexión de dispositivos a Internet y a redes locales sin necesidad de cables.${<br></br>}Utiliza ondas de radio para transmitir datos y se basa en los estándares IEEE 802.11.${<br></br>}Es ampliamente utilizada en hogares, oficinas y espacios públicos.`}</p>
+              <ul>
+                <li>
+                  <strong>Características:</strong>
+                  <ul className='list-disc list-inside'>
+                    <li>
+                    Movilidad y conveniencia.
+                    </li>
+                    <li>
+                    Facilidad de instalación y uso.
+                    </li>
+                    <li>
+                    Posibilidad de interferencias y problemas de seguridad.
+                    </li>
+                    <li>
+                    Velocidad y alcance variables según el estándar y el entorno.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Capas del modelo OSI:</strong>
+                  <ul className='list-disc list-inside'>
+                    <li>{`Capa física (Physical Layer): Define las características de la transmisión de ondas de radio.`}</li>
+                    <li>
+                      {`Capa de enlace de datos (Data Link Layer): Controla el acceso al medio inalámbrico y la transmisión de tramas.`}
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+
       </div>
 
       <div id='side-bar' className='col-span-1 bg-blue-300'>
         <ul>
           <li>
-            Servicios y protocolos de red
+            Servicios y protocolos de red.
           </li>
           <li>
-            Puertos TCP/UDP
+            Puertos TCP/UDP.
           </li>
           <li>
-            Modelo OSI
+            Modelo OSI.
           </li>
           <li>
-            Modelo TCP/IP
+            Modelo TCP/IP.
           </li>
           <li>
-            Elementos y Normas de Cableado Estructurado
+            Elementos y Normas de Cableado Estructurado.
+          </li>
+          <li>
+            Ancho de banda.
+          </li>
+          <li>
+            Tecnologia de redes.
           </li>
         </ul>
       </div>
