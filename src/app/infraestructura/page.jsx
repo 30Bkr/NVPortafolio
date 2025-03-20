@@ -14,13 +14,9 @@ export default function Page() {
           <p>Los servicios de redes son aplicaciones y funcionalidades que permiten a los dispositivos en una red comunicarse y compartir recursos. Estos servicios son esenciales para el funcionamiento de Internet y las redes locales. Algunos ejemplos incluyen:</p>
           <ul className='list-decimal list-inside'>
             <li>
-<<<<<<< HEAD
               <strong>
                 Servicio de paginas web
               </strong>
-=======
-              Servicio de páginas web
->>>>>>> c875eee (ortografía)
               {/* <h3>Servicio de páginas web</h3> */}
             </li>
             <p>Hypertext Transfer Protocol / Hypertext Transfer Protocol Secure (HTTP/HTTPS): Protocolo de Transferencia de Hipertexto, el cual permite el acceso a páginas web y otros contenidos en línea.</p>
@@ -32,12 +28,8 @@ export default function Page() {
               {`File Transfer Protocol (FTP): Protocolo de Transferencia de Archivos, utilizado para la transferencia de archivos entre computadoras a través de una red.`}
             </p>
             <li>
-<<<<<<< HEAD
               <strong>Servicios de correo electronico</strong>
               
-=======
-              Servicios de correo electrónico
->>>>>>> c875eee (ortografía)
             </li>
             <ul className='list-disc list-inside'>
               <li>
@@ -52,13 +44,8 @@ export default function Page() {
             </ul>
             <li><strong>Servicio de nombres de dominio</strong></li>
             <p>{`Domain Name System (DNS): Sistema de Nombres de Dominio, que traduce nombres de dominio (como "google.com") a direcciones IP (como "172.217.160.142"), lo que facilita el acceso a sitios web y otros recursos en línea.`}</p>
-<<<<<<< HEAD
             <li><strong>Servicio de red</strong></li>
             <p>{`Dynamic Host Configuration Protocol (DHCP): Protocolo de Configuración Dinámica de Host, que asigna  automáticamente direcciones IP y otros parámetros a los dispositivos en una red.`}</p>
-=======
-            <li>Servicio de red</li>
-            <p>{`Dynamic Host Configuration Protocol (DHCP): Protocolo de Configuración Dinámica de Host, que asigna automáticamente direcciones IP y otros parámetros a los dispositivos en una red.`}</p>
->>>>>>> c875eee (ortografía)
           </ul>
           <h3>Protocolos de red</h3>
           <p>Los protocolos de redes son conjuntos de reglas y estándares que definen cómo los dispositivos se comunican a través de una red. Estos protocolos aseguran que los datos se transmitan de manera confiable y eficiente. Algunos de los protocolos más importantes incluyen:</p>
