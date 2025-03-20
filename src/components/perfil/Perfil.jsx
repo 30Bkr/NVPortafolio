@@ -12,7 +12,6 @@ const Perfil = ({ name, image}) => {
                 fill
                 alt={name}
                 className={`${styles.clip}`}
-                // style={'clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)'}
               />
             </div>
             <div>
