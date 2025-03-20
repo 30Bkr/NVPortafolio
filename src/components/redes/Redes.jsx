@@ -22,7 +22,7 @@ const Redes = () => {
         <div className='absolute right-0'>
           <Image 
             src={'/internet.jpg'}
-            height={380}
+            height={480}
             width={550}
             alt='Image abaout internet'
             className='rounded-2xl rounded-r-none shadow-md'
