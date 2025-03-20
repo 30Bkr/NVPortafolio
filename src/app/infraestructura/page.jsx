@@ -326,10 +326,76 @@ export default function Page() {
                 <li>Es un sistema que garantiza la seguridad eléctrica del cableado y los equipos.</li>
               </ul>
             </li>
-
-            
-            
           </ul>
+          <h3>Normas de cableado estructurado:</h3>
+          <p>Existen diversas normas que definen los requisitos y estándares para el diseño e instalación de sistemas de cableado estructurado. Algunas de las más importantes son:</p>
+          <ul className='list-disc list-inside'>
+            <li><strgon>TIA/EIA-568:</strgon>
+              <ul className='list-disc list-inside'>
+                <li>{`Desarrollada por la Asociación de Industrias de Telecomunicaciones (TIA) y la Alianza de Industrias Electrónicas (EIA).`}</li>
+                <li>Es la norma más utilizada en América del Norte.</li>
+                <li>Define los requisitos para el cableado de edificios comerciales, incluyendo los tipos de cables, conectores, distancias y topologías.</li>
+                <li>En esta norma se pueden encontrar dos esquemas de cableado diferentes para conectores RJ-45, que son los conectores utilizados en cables Ethernet.  Para ello, se divide en TIA/EIA-568A y TIA/EIA-568B, como se visualiza a continuación:
+                  <Image 
+                    src={'/normas.jpeg'}
+                    width={220}
+                    height={180}
+                    alt='Diferencias entre protocolos y servicios'
+                    className='w-120 h-90'
+                  />
+                
+                </li>
+              </ul>
+            </li>
+            <li><strong>ISO/IEC 11801:</strong>
+              <ul className='list-disc list-inside'>
+                <li>{`Desarrollada por la Organización Internacional de Normalización (ISO) y la Comisión Electrotécnica Internacional (IEC).`}</li>
+                <li>Es la norma internacional para el cableado de edificios.</li>
+                <li>Define los requisitos para el cableado de diversos tipos de edificios, incluyendo oficinas, centros de datos y edificios residenciales.</li>
+              </ul>
+            </li>
+            <li><strong>ANSI/TIA-568:</strong>
+              <ul className='list-disc list-inside'>
+                <li>{`La Asociación de Industrias de Telecomunicaciones (TIA) y el Instituto Nacional Estadounidense de Estándares (ANSI) desarrollaron este estándar que rige el diseño, la instalación y el mantenimiento de los sistemas de cableado estructurado.`}</li>
+              </ul>
+            </li>
+          </ul>
+          <h3>Importancia de las normas:</h3>
+          <p>El cumplimiento de las normas de cableado estructurado es fundamental para garantizar:</p>
+          <ul className='list-disc list-inside'>
+            <li>
+              <strong>Interoperabilidad:</strong>
+              <ul className='list-disc list-inside'>
+                <li>Permite que los equipos de diferentes fabricantes se comuniquen entre sí.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Rendimiento:</strong>
+              <ul className='list-disc list-inside'>
+                <li>Garantiza la transmisión de señales de alta velocidad y calidad.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Fiabilidad:</strong>
+              <ul className='list-disc list-inside'>
+                <li>Reduce el riesgo de fallos y caídas de la red.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Escalabilidad:</strong>
+              <ul className='list-disc list-inside'>
+                <li>Facilita la expansión y actualización de la red.</li>
+              </ul>
+            </li>
+          </ul>
+          <p>A continuación se observa la comparación entre estas normas:</p>
+          <Image 
+            width={100}
+            height={100}
+            alt='Normas de algo'
+            className=''
+            src={'/normasFinal.jpeg'}
+          />
         </div>
       </div>
 
