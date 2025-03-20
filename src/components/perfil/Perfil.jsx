@@ -7,6 +7,7 @@ const Perfil = ({ name, image}) => {
           <div className='w-auto flex mx-4 flex-col items-center font-semibold text-[20px] text-slate-600 hover:text-rose-500'>
             <div className='w-31 h-31 relative'>
               <Image 
+                id={name}
                 src={image}
                 fill
                 alt={name}
