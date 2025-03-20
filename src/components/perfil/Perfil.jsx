@@ -6,13 +6,13 @@ const Perfil = ({ name, image}) => {
   return (
           <div className='w-auto flex mx-4 flex-col items-center font-semibold text-[20px] text-slate-600 hover:text-rose-500'>
             <div className='w-31 h-31 relative'>
-              <Image 
+              <Image
                 id={name}
                 src={image}
                 fill
                 alt={name}
                 className={`${styles.clip}`}
-                style={'clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)'}
+                // style={'clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)'}
               />
             </div>
             <div>
