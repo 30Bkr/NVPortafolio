@@ -512,8 +512,8 @@ export default function Page() {
           <p>Podemos compararlas de la siguiente manera:</p>
           <Image
             src={'/final.jpeg'}
-            width={100}
-            height={100}
+            width={320}
+            height={240}
             alt='Tecnologias de redes'
             className='w-120 h-140'
           />
