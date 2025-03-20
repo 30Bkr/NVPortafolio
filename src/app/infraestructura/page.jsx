@@ -5,27 +5,31 @@ export default function Page() {
   return (
     <div className={`py-18 ${styles.contenedor} w-full grid grid-cols-4`}>
       <div className={`col-span-3 ${styles.blog}`} id='contenido'>
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
 
-        <div id='Servicios'>
+        <div id='Servicios' className='mt-8'>
           <h2>Servicios y protocolos</h2>
+          <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
+
           <h3>Servicios de red</h3>
           <p>Los servicios de redes son aplicaciones y funcionalidades que permiten a los dispositivos en una red comunicarse y compartir recursos. Estos servicios son esenciales para el funcionamiento de Internet y las redes locales. Algunos ejemplos incluyen:</p>
           <ul className='list-decimal list-inside'>
             <li>
-              Servicio de paginas web
+              <strong>
+                Servicio de paginas web
+              </strong>
               {/* <h3>Servicio de páginas web</h3> */}
             </li>
             <p>Hypertext Transfer Protocol / Hypertext Transfer Protocol Secure (HTTP/HTTPS): Protocolo de Transferencia de Hipertexto, el cual permite el acceso a páginas web y otros contenidos en línea.</p>
-            <li>
-              Servicio de transferencia de archivo
+            <li><strong>Servicio de transferencia de archivo</strong>
+              
               {/* <h3>Servicio de transferencia de archivos</h3> */}
             </li>
             <p>
               {`File Transfer Protocol (FTP): Protocolo de Transferencia de Archivos, utilizado para la transferencia de archivos entre computadoras a través de una red.`}
             </p>
             <li>
-              Servicios de correo electronico
+              <strong>Servicios de correo electronico</strong>
+              
             </li>
             <ul className='list-disc list-inside'>
               <li>
@@ -38,24 +42,29 @@ export default function Page() {
                 {`Internet Message Access Protocol (IMAP): Protocolo de Acceso a Mensajes de Internet, también es utilizado para la recuperación de correos electrónicos, pero a diferencia de POP3, permite a los usuarios acceder y gestionar sus correos electrónicos directamente en el servidor. Esto significa que los correos se pueden ver desde múltiples dispositivos sin ser eliminados del servidor.`}
               </li>
             </ul>
-            <li>Servicio de nombres de dominio</li>
+            <li><strong>Servicio de nombres de dominio</strong></li>
             <p>{`Domain Name System (DNS): Sistema de Nombres de Dominio, que traduce nombres de dominio (como "google.com") a direcciones IP (como "172.217.160.142"), lo que facilita el acceso a sitios web y otros recursos en línea.`}</p>
-            <li>Servicio de red</li>
+            <li><strong>Servicio de red</strong></li>
             <p>{`Dynamic Host Configuration Protocol (DHCP): Protocolo de Configuración Dinámica de Host, que asigna  automáticamente direcciones IP y otros parámetros a los dispositivos en una red.`}</p>
           </ul>
           <h3>Protocolos de red</h3>
           <p>Los protocolos de redes son conjuntos de reglas y estándares que definen cómo los dispositivos se comunican a través de una red. Estos protocolos aseguran que los datos se transmitan de manera confiable y eficiente. Algunos de los protocolos más importantes incluyen:</p>
           <ul className='list-decimal list-inside'>
-          <li>Protocolo de Internet / Internet Protocol (IP): Es el protocolo fundamental que define cómo se direccionan y enrutan los paquetes de datos a través de Internet. Existen dos versiones principales:</li>
-          <ul className='list-disc list-inside'>
-            <li>IPv4: Utiliza direcciones de 32 bits.</li>
-            <li>IPv6: Utiliza direcciones de 128 bits y se diseñó para reemplazar IPv4 debido a la escasez de direcciones.</li>
-          </ul>
-          <li>{`Protocolo de Control de Transmisión / Transmission Control Protocol (TCP): Proporciona una conexión confiable y orientada a la conexión para la transmisión de datos.`}</li>
-          <li>{`Protocolo de Datagramas de Usuario / User Datagram Protocol (UDP): Permite la transmisión de datos sin la sobrecarga de conexión que tiene TCP, ideal para aplicaciones que requieren velocidad, como el streaming.`}</li>
-          <li>{`Protocolo de Transferencia de Hipertexto / Hypertext Transfer Protocol (HTTP): Define cómo se transfieren las páginas web y otros contenidos en línea.`}</li>
-          <li>{`Protocolo de Transferencia de Archivos / File Transfer Protocol (FTP): Permite la transferencia de archivos entre un cliente y un servidor.`}</li>
-          <li>{`Protocolo de Resolución de Direcciones / Address Resolution Protocol (ARP): Se utiliza para mapear direcciones IP a direcciones MAC en una red local.`}</li>
+            <li><strong>Protocolo de Internet / Internet Protocol {`(IP)`}</strong>
+             <p>Es el protocolo fundamental que define cómo se direccionan y enrutan los paquetes de datos a través de Internet. Existen dos versiones principales:</p> 
+              <ul className='list-disc list-inside'>
+                <li>IPv4: Utiliza direcciones de 32 bits.</li>
+                <li>IPv6: Utiliza direcciones de 128 bits y se diseñó para reemplazar IPv4 debido a la escasez de direcciones.</li>
+              </ul>
+            </li>
+          <li> <strong>Protocolo de Control de Transmisión / Transmission Control Protocol {`(TCP)`} </strong>
+            <p>Proporciona una conexión confiable y orientada a la conexión para la transmisión de datos.</p>
+          </li>
+          <li><strong>Protocolo de Datagramas de Usuario / User Datagram Protocol {`(UDP)`}</strong> 
+          <p>Permite la transmisión de datos sin la sobrecarga de conexión que tiene TCP, ideal para aplicaciones que requieren velocidad, como el streaming.</p></li>
+          <li><strong>Protocolo de Transferencia de Hipertexto / Hypertext Transfer Protocol {`(HTTP)`}</strong> <p>Define cómo se transfieren las páginas web y otros contenidos en línea.</p></li>
+          <li><strong>Protocolo de Transferencia de Archivos / File Transfer Protocol {`(FTP)`}</strong> <p>Permite la transferencia de archivos entre un cliente y un servidor.</p></li>
+          <li><strong>Protocolo de Resolución de Direcciones / Address Resolution Protocol {`(ARP)`}</strong> Se utiliza para mapear direcciones IP a direcciones MAC en una red local.</li>
         </ul>
         <h3>La interdependencia: Servicios y protocolos trabajando juntos</h3>
         <p>La relación entre servicios y protocolos de red es fundamental y de interdependencia. Podemos entenderla mejor con la siguiente analogía:</p>
@@ -95,10 +104,11 @@ export default function Page() {
         </ul>
         </div>
 
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
 
-        <div id='puertos'>
+        <div id='puertos' className='mt-8'>
           <h2>Puertos TCP / UDP</h2>
+          <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
+
           <p>
           Los puertos son puntos de comunicación virtual donde las aplicaciones se conectan para enviar y recibir datos. Se representan como números de 16 bits, lo que significa que pueden variar de 0 a 65535. En este sentido, las aplicaciones utilizan números de puerto para poder comunicarse entre sí. Por ejemplo, el puerto 80 es utilizado para el protocolo HTTP, y el 443 para el protocolo HTTPS.
           </p>
@@ -134,10 +144,11 @@ export default function Page() {
             className='w-120 h-180'
           />
         </div>
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
 
         <div id='OSI'>
           <h2>Modelo OSI</h2>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
+
           <p>{`El Modelo de Interconexión de Sistemas Abiertos (OSI, por sus siglas en inglés Open Systems Interconnection) es un modelo conceptual creado por la Organización Internacional de Normalización (ISO) en 1984. Su objetivo principal es estandarizar la comunicación entre diferentes sistemas informáticos, independientemente de su fabricante o tecnología.`}</p>
           <h3>Caracteristicas principales:</h3>
           <ul className='list-disc list-inside'>
@@ -233,7 +244,7 @@ export default function Page() {
           <p>El modelo OSI es fundamental para entender cómo se comunican los dispositivos en una red y ayuda a los ingenieros y técnicos a diseñar y solucionar problemas en sistemas de comunicación. Aunque en la práctica no todos los protocolos siguen estrictamente este modelo, sigue siendo una referencia importante en el ámbito de las redes.</p>
         </div>
 
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
         <div id='TCP'>
           <h2>Modelo TCP/IP</h2>
@@ -282,7 +293,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
         
         <div id='cableado'>
@@ -397,7 +408,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
         <div id='banda'>
           <h2>Ancho de banda</h2>
@@ -504,7 +515,7 @@ export default function Page() {
               </li>
             </ul>
         </div>
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
         <div id='redes'>
           <h2>Tecnologias de redes</h2>
           <p>Las tecnologías de redes son el conjunto de hardware y software que permiten a los dispositivos comunicarse e intercambiar datos entre sí. Estas tecnologías abarcan una amplia gama de métodos y protocolos, desde las conexiones por cable tradicionales hasta las redes inalámbricas más modernas.</p>

@@ -24,18 +24,21 @@
   font-family: 'Montserrat';
 }
 .blog h2{
-  color: red;
+  color: rgb(27, 10, 98);
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  font-size: x-large;
 }
 .blog h3{
-  color: blue;
+  color: rgb(13, 13, 53);
   font-weight: 600;
   margin-bottom: 8px;
+  font-size: large;
+  margin-top: 32px;
 }
 .blog p{
   margin-bottom: 8px;
@@ -44,5 +47,6 @@
   margin-left: 8px;
 }
 .blog ul ul{
-  margin-left: 16px;
+  list-style: circle;
+  margin-left: 32px;
 }
