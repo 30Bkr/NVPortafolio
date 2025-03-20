@@ -23,3 +23,26 @@
 .font{
   font-family: 'Montserrat';
 }
+.blog h2{
+  color: red;
+  font-weight: 700;
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.blog h3{
+  color: blue;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.blog p{
+  margin-bottom: 8px;
+}
+.blog ul{
+  margin-left: 8px;
+}
+.blog ul ul{
+  margin-left: 16px;
+}

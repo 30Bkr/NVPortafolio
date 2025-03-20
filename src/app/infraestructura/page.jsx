@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Page() {
   return (
     <div className={`py-18 ${styles.contenedor} w-full grid grid-cols-4`}>
-      <div className='col-span-3 bg-red-300' id='contenido'>
+      <div className={`col-span-3 ${styles.blog}`} id='contenido'>
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
 
         <div id='Servicios'>
@@ -43,7 +43,6 @@ export default function Page() {
             <li>Servicio de red</li>
             <p>{`Dynamic Host Configuration Protocol (DHCP): Protocolo de Configuración Dinámica de Host, que asigna  automáticamente direcciones IP y otros parámetros a los dispositivos en una red.`}</p>
           </ul>
-          <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
           <h3>Protocolos de red</h3>
           <p>Los protocolos de redes son conjuntos de reglas y estándares que definen cómo los dispositivos se comunican a través de una red. Estos protocolos aseguran que los datos se transmitan de manera confiable y eficiente. Algunos de los protocolos más importantes incluyen:</p>
           <ul className='list-decimal list-inside'>
@@ -58,7 +57,6 @@ export default function Page() {
           <li>{`Protocolo de Transferencia de Archivos / File Transfer Protocol (FTP): Permite la transferencia de archivos entre un cliente y un servidor.`}</li>
           <li>{`Protocolo de Resolución de Direcciones / Address Resolution Protocol (ARP): Se utiliza para mapear direcciones IP a direcciones MAC en una red local.`}</li>
         </ul>
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
         <h3>La interdependencia: Servicios y protocolos trabajando juntos</h3>
         <p>La relación entre servicios y protocolos de red es fundamental y de interdependencia. Podemos entenderla mejor con la siguiente analogía:</p>
         <ul className='list-disc list-inside'>
@@ -76,7 +74,7 @@ export default function Page() {
         />
         <h3>Ejemplos</h3>
         <ul className='list-disc list-inside'>
-          <li><strong>Navegacion web</strong></li>
+          <li><strong>Navegación web</strong></li>
           <ul className='list-disc list-inside ml-4'>
             <li>El servicio es la visualización de páginas web en tu navegador.
             </li>
@@ -136,6 +134,7 @@ export default function Page() {
             className='w-120 h-180'
           />
         </div>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
 
         <div id='OSI'>
           <h2>Modelo OSI</h2>
@@ -330,7 +329,7 @@ export default function Page() {
           <h3>Normas de cableado estructurado:</h3>
           <p>Existen diversas normas que definen los requisitos y estándares para el diseño e instalación de sistemas de cableado estructurado. Algunas de las más importantes son:</p>
           <ul className='list-disc list-inside'>
-            <li><strgon>TIA/EIA-568:</strgon>
+            <li><strong>TIA/EIA-568:</strong>
               <ul className='list-disc list-inside'>
                 <li>{`Desarrollada por la Asociación de Industrias de Telecomunicaciones (TIA) y la Alianza de Industrias Electrónicas (EIA).`}</li>
                 <li>Es la norma más utilizada en América del Norte.</li>
@@ -606,7 +605,7 @@ export default function Page() {
 
       </div>
 
-      <div id='side-bar' className='col-span-1 bg-blue-300'>
+      <div id='side-bar' className='col-span-1'>
         <ul>
           <li>
             Servicios y protocolos de red.
