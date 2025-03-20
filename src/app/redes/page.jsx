@@ -83,8 +83,8 @@ export default function Page() {
           </ul>
         </div>
 
-        <div id='modos' className='pt-8'>
-          <h3>Modos de transmisión de datos</h3>
+        <div id='medios2' className='pt-8'>
+          <h3>Medios de transmisión de datos</h3>
           <p>Los modos de transmisión de datos son las formas en las que se transfieren datos de un punto a otro. Algunos de los modos de transmisión de datos son:</p>
           <ul className='list-disc list-inside'>
             <li>
@@ -114,8 +114,8 @@ export default function Page() {
             <Link href={'/redes#transmision'}>
               <li>Transmisión de datos</li>
             </Link>
-            <Link href={'/redes#modos'}>
-              <li>Modos de transmisión de datoss</li>
+            <Link href={'/redes#medios2'}>
+              <li>Medios de transmisión de datoss</li>
             </Link>
           </ul>
         </div>
