@@ -52,7 +52,7 @@
 }
 @media  (max-width: 1299px) {
   .contenedor{
-    margin: 4px;
+    margin: 0 4px;
     width: 100%;
   }
   .cajon{

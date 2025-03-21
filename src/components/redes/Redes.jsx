@@ -28,7 +28,7 @@ const Redes = () => {
             </Link>
           </ul>
         </div>
-        <div className='lg:absolute lg:right-0 px-4 rounded-'>
+        <div className='lg:absolute lg:right-0 px-4 mt-4 rounded-'>
           <Image 
             src={'/internet.jpg'}
             height={480}
