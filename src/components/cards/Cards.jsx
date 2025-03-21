@@ -1,7 +1,6 @@
 import React from 'react'
 import { CardsItems } from './CardsItems'
 import styles from '../../app/page.module.css'
-import Link from 'next/link'
 
 
 export const Cards = () => {
@@ -14,30 +13,22 @@ export const Cards = () => {
           <p className='text-gray-600'>En este apartado encontrarás todo sobre conectores, protocoles, normas y tecnologías de redes</p>
         </div>
         <div className='lg:grid lg:grid-cols-4 lg:gap-4 flex flex-col items-center gap-4 mt-4'>
-          <Link href={'/infraestructura/#Servicios'}>
-            <CardsItems title={'Servicios y protocolos'} image={'/internet.jpg'}/>
-          </Link>
-          <Link href={'/infraestructura/#puertos'}>
-            <CardsItems title={'Puertos TCP/UDP'} image={'/lineas.jpg'}/>
-          </Link>
-          <Link href={'/infraestructura/#OSI'}>
-            <CardsItems title={'Modelo OSI'} image={'/redes.jpg'} />
-          </Link>
-          <Link href={'/infraestructura/#TCP'}>
-            <CardsItems title={'Modelo TCP'} image={'/redes.jpg'}/>
-          </Link>
-          <Link href={'/infraestructura/#cableado'}>
-            <CardsItems title={'Elementos y normas de cableado'} image={'/cableado.jpg'}/>
-          </Link>
-          <Link href={'/infraestructura/#banda'}>
-            <CardsItems title={'Ancho de banda'} image={'/velocidades.jpg'}/>
-          </Link>
-          <Link href={'/infraestructura/#redes'}>
-            <CardsItems title={'Tecnología de redes'} image={'/internet-Mundial.jpg'}/>
-          </Link>
-          <Link href={'/infraestructura/#Servicios'}>
-            <CardsItems title={'Ver contenido completo'} image={'/redes.jpg'}/>
-          </Link>
+
+            <CardsItems title={'Servicios y protocolos'} image={'/internet.jpg'} path={'/infraestructura/#Servicios'}/>
+
+            <CardsItems title={'Puertos TCP/UDP'} image={'/lineas.jpg'} path={'/infraestructura/#puertos'}/>
+
+            <CardsItems title={'Modelo OSI'} image={'/redes.jpg'} path={'/infraestructura/#OSI'}/>
+
+            <CardsItems title={'Modelo TCP'} image={'/redes.jpg'} path={'/infraestructura/#TCP'}/>
+
+            <CardsItems title={'Elementos y normas de cableado'} image={'/cableado.jpg'} path={'/infraestructura/#cableado'}/>
+
+            <CardsItems title={'Ancho de banda'} image={'/velocidades.jpg'} path={'/infraestructura/#banda'}/>
+
+            <CardsItems title={'Tecnología de redes'} image={'/internet-Mundial.jpg'} path={'/infraestructura/#redes'}/>
+
+            <CardsItems title={'Ver contenido completo'} image={'/redes.jpg'} path={'/infraestructura/#Servicios'}/>
         </div>
       </div>
 

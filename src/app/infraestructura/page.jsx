@@ -10,9 +10,9 @@ export default function Page() {
   
   return (
     <div className={`lg:py-18  px-2 lg:px-0 ${styles.contenedor} w-full lg:grid lg:grid-cols-4`}>
-      <div className={`lg:col-span-3 ${styles.blog} relative`} id='contenido'>
+      <div className={`lg:col-span-3 ${styles.blog} relative px-2`} id='contenido'>
 
-        <div id='Servicios' className='pt-16'>
+        <div id='Servicios'>
           <h2>Servicios y protocolos</h2>
           <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
@@ -111,7 +111,7 @@ export default function Page() {
         </div>
 
 
-        <div id='puertos' className='pt-16'>
+        <div id='puertos'>
           <h2>Puertos TCP / UDP</h2>
           <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
@@ -151,7 +151,7 @@ export default function Page() {
           />
         </div>
 
-        <div id='OSI' className='pt-16'>
+        <div id='OSI'>
           <h2>Modelo OSI</h2>
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
@@ -252,7 +252,7 @@ export default function Page() {
 
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
-        <div id='TCP' className='pt-16'>
+        <div id='TCP'>
           <h2>Modelo TCP/IP</h2>
           <p>El modelo TCP/IP (Transmission Control Protocol/Internet Protocol) es un conjunto de protocolos de comunicación que se utiliza para interconectar dispositivos en redes, incluyendo Internet. A diferencia del modelo OSI, que tiene siete capas, el modelo TCP/IP se compone de cuatro capas principales. A continuación se presenta un resumen de cada capa:</p>
           <ul className='list-decimal list-inside'>
@@ -302,7 +302,7 @@ export default function Page() {
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
         
-        <div id='cableado' className='pt-16'>
+        <div id='cableado'>
           <h2>Elementos y Normas de Cableado estructurado</h2>
           <p>El cableado estructurado es un sistema de cableado genérico y organizado que permite la transmisión de señales de voz, datos y vídeo en un edificio o campus. Su objetivo es proporcionar una infraestructura de red flexible, escalable y confiable que pueda soportar diversas aplicaciones y tecnologías.</p>
           <h3>Elemntos del cableado estructurado</h3>
@@ -416,7 +416,7 @@ export default function Page() {
 
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
-        <div id='banda' className='pt-16'>
+        <div id='banda'>
           <h2>Ancho de banda</h2>
           <p>{`El ancho de banda, en términos de redes, se refiere a la capacidad máxima de una conexión de red para transmitir datos en un período de tiempo determinado. Se mide en bits por segundo (bps) y sus múltiplos, como kilobits por segundo (kbps), megabits por segundo (Mbps) o gigabits por segundo (Gbps).
           Una forma común de entender el ancho de banda es compararlo con una tubería de agua. Una tubería más ancha puede transportar más agua al mismo tiempo, de la misma  manera que un mayor ancho de banda permite transmitir más datos simultáneamente.
@@ -522,7 +522,7 @@ export default function Page() {
             </ul>
         </div>
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
-        <div id='redes' className='pt-16'>
+        <div id='redes'>
           <h2>Tecnologías de redes</h2>
           <p>Las tecnologías de redes son el conjunto de hardware y software que permiten a los dispositivos comunicarse e intercambiar datos entre sí. Estas tecnologías abarcan una amplia gama de métodos y protocolos, desde las conexiones por cable tradicionales hasta las redes inalámbricas más modernas.</p>
           <p>Podemos compararlas de la siguiente manera:</p>
@@ -622,50 +622,53 @@ export default function Page() {
 
       </div>
 
-      <div id='side-bar' className='lg:col-span-1 lg:fixed lg:right-0 lg:flex hidden'>
-        <ul>
-          <Link href={'/infraestructura/#Servicios'}>
-            <li>
-              Servicios y protocolos de 
+      <div id='side-bar' className='lg:col-span-1 lg:relative lg:pt-16 lg:flex hidden'>
+        <div className='lg:fixed'>
+          <ul>
+            <Link href={'/infraestructura/#Servicios'}>
+              <li className='text-xl mb-2 border-b-1 border-solid'>
+                Servicios y protocolos de 
+              </li>
+            </Link>
+            <Link href={'/infraestructura/#puertos'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Puertos TCP/UDP.
             </li>
-          </Link>
-          <Link href={'/infraestructura/#puertos'}>
-          <li>
-            Puertos TCP/UDP.
-          </li>
-          </Link>
+            </Link>
 
-          <Link href={'/infraestructura/#OSI'}>
-          <li>
-            Modelo OSI.
-          </li>
-          </Link>
+            <Link href={'/infraestructura/#OSI'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Modelo OSI.
+            </li>
+            </Link>
 
-          <Link href={'/infraestructura/#TCP'}>
-          <li>
-            Modelo TCP/IP.
-          </li>
-          </Link>
+            <Link href={'/infraestructura/#TCP'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Modelo TCP/IP.
+            </li>
+            </Link>
 
-          <Link href={'/infraestructura/#cableado'}>
-          <li>
-            Elementos y Normas de Cableado Estructurado.
-          </li>
-          </Link>
+            <Link href={'/infraestructura/#cableado'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Elementos y Normas de Cableado Estructurado.
+            </li>
+            </Link>
 
-          <Link href={'/infraestructura/#banda'}>
-          <li>
-            Ancho de banda.
-          </li>
-          </Link>
+            <Link href={'/infraestructura/#banda'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Ancho de banda.
+            </li>
+            </Link>
 
-          <Link href={'/infraestructura/#redes'}>
-          <li>
-            Tecnología de redes.
-          </li>
-          </Link>
+            <Link href={'/infraestructura/#redes'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Tecnología de redes.
+            </li>
+            </Link>
 
-        </ul>
+          </ul>
+        </div>
+
       </div>
     </div>
   );

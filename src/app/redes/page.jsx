@@ -5,14 +5,14 @@ export default function Page() {
   return (
     <div className={`lg:py-18 ${styles.contenedor} lg:w-full lg:grid lg:grid-cols-4`}>
       <div className={`lg:col-span-3 ${styles.blog} px-4`} id='contenido'>
-        <div id='redes' className='pt-16'>
+        <div id='redes' >
           <h2>Redes</h2>
           <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
           <p>{`Según Forouzan, B. (2007), “una red es un conjunto de dispositivos conectados por enlaces de un medio físico”. Entonces, se puede definir como un sistema de interconexión entre dispositivos que permite el intercambio de información y recursos entre diferentes entidades, como personas, dispositivos o sistemas. Las redes pueden clasificarse según su alcance (LAN, WAN, MAN) y su topología (estrella, bus, anillo, malla).  Su principal función es facilitar la comunicación entre usuarios y dispositivos, optimizando el uso de recursos compartidos. `}</p>
         </div>
         
-        <div id='elementos' className='pt-8'>
+        <div id='elementos'>
           <h3>Elementos de una red</h3>
           
           <p>{`Para Hallberg (2016), “una red es mucho más que la suma de sus componentes individuales. Es la interacción y la interconexión de nodos, medios, hardware, software y protocolos lo que crea un sistema de comunicación dinámico y funcional”. En este sentido, entre estos componentes esenciales se encuentran los siguientes:`}</p>
@@ -33,7 +33,7 @@ export default function Page() {
           <p>La interacción de estos elementos es fundamental para garantizar la comunicación efectiva en cualquier red, ya sea una red doméstica o una red global como Internet.</p>
         </div>
 
-        <div id='medios' className='pt-8'>
+        <div id='medios'>
           <h3>Medio de comunicación</h3>
           <p>Los medios de comunicación se dividen en dos categorías principales:</p>
           <ul className='list-disc list-inside'>
@@ -63,7 +63,7 @@ export default function Page() {
           </ul>
         </div>
 
-        <div id='transmision' className='pt-8'>
+        <div id='transmision'>
           <h3>Transmisión de datos</h3>
           <p>La transmisión de datos se refiere al proceso de enviar información de un lugar a otro. Se pueden clasificar en:</p>
           <ul className='list-disc list-inside'>
@@ -83,7 +83,7 @@ export default function Page() {
           </ul>
         </div>
 
-        <div id='medios2' className='pt-8'>
+        <div id='medios2'>
           <h3>Medios de transmisión de datos</h3>
           <p>Los modos de transmisión de datos son las formas en las que se transfieren datos de un punto a otro. Algunos de los modos de transmisión de datos son:</p>
           <ul className='list-disc list-inside'>
@@ -97,25 +97,24 @@ export default function Page() {
           </ul>
         </div>
       </div>
-
-
-      <div className='lg:col-span-1 lg:relative lg:flex hidden'>
+      
+      <div className='lg:col-span-1 lg:relative lg:flex lg:pt-16 hidden'>
         <div id='side-bar' className='lg:fixed'>
           <ul>
             <Link href={'/redes#redes'}>
-              <li>Redes</li>
+              <li className='text-xl mb-2 border-b-1 border-solid'>Redes</li>
             </Link>
             <Link href={'/redes#elementos'}>
-              <li>Elementos de una red</li>
+              <li className='text-xl mb-2 border-b-1 border-solid'>Elementos de una red</li>
             </Link>
             <Link href={'/redes#medios'}>
-              <li>Medio de comunicación</li>
+              <li className='text-xl mb-2 border-b-1 border-solid'>Medio de comunicación</li>
             </Link>
             <Link href={'/redes#transmision'}>
-              <li>Transmisión de datos</li>
+              <li className='text-xl mb-2 border-b-1 border-solid'>Transmisión de datos</li>
             </Link>
             <Link href={'/redes#medios2'}>
-              <li>Medios de transmisión de datoss</li>
+              <li className='text-xl mb-2 border-b-1 border-solid'>Medios de transmisión de datos</li>
             </Link>
           </ul>
         </div>
