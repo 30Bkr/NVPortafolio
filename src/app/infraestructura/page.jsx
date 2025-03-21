@@ -9,8 +9,8 @@ export default function Page() {
   console.log(pathname);
   
   return (
-    <div className={`py-18 ${styles.contenedor} w-full grid grid-cols-4`}>
-      <div className={`col-span-3 ${styles.blog} relative`} id='contenido'>
+    <div className={`lg:py-18  px-2 lg:px-0 ${styles.contenedor} w-full lg:grid lg:grid-cols-4`}>
+      <div className={`lg:col-span-3 ${styles.blog} relative`} id='contenido'>
 
         <div id='Servicios' className='pt-16'>
           <h2>Servicios y protocolos</h2>
@@ -622,7 +622,7 @@ export default function Page() {
 
       </div>
 
-      <div id='side-bar' className='col-span-1 fixed right-0'>
+      <div id='side-bar' className='lg:col-span-1 lg:fixed lg:right-0 lg:flex hidden'>
         <ul>
           <Link href={'/infraestructura/#Servicios'}>
             <li>

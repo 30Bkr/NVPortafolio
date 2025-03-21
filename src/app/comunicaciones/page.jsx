@@ -4,8 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 export default function Page() {
   return (
-    <div className={`py-18 ${styles.contenedor} w-full grid grid-cols-4`}>
-      <div className={`col-span-3 ${styles.blog}`} id='contenido'>
+    <div className={`py-18 px-2 lg:px-0 ${styles.contenedor} w-full lg:grid lg:grid-cols-4`}>
+      <div className={`lg:col-span-3 ${styles.blog}`} id='contenido'>
         <div id='lineas' className='pt-16'>
           <h2>Comunicaciones</h2>
           <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
@@ -108,8 +108,8 @@ export default function Page() {
         </div>
 
       </div>
-      <div id='side-bar' className='col-span-1 relative'>
-        <div className='fixed'>
+      <div id='side-bar' className='lg:col-span-1 lg:relative lg:flex hidden'>
+        <div className='lg:fixed'>
         <ul>
           <Link href={'/comunicaciones#lineas'}>
             <li>Líneas de comunicación</li>

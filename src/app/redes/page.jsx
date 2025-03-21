@@ -3,8 +3,8 @@ import styles from '../page.module.css'
 import Link from 'next/link';
 export default function Page() {
   return (
-    <div className={`py-18 ${styles.contenedor} w-full grid grid-cols-4`}>
-      <div className={`col-span-3 ${styles.blog}`} id='contenido'>
+    <div className={`lg:py-18 ${styles.contenedor} lg:w-full lg:grid lg:grid-cols-4`}>
+      <div className={`lg:col-span-3 ${styles.blog} px-4`} id='contenido'>
         <div id='redes' className='pt-16'>
           <h2>Redes</h2>
           <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
@@ -99,8 +99,8 @@ export default function Page() {
       </div>
 
 
-      <div className='col-span-1 relative'>
-        <div id='side-bar' className='fixed'>
+      <div className='lg:col-span-1 lg:relative lg:flex hidden'>
+        <div id='side-bar' className='lg:fixed'>
           <ul>
             <Link href={'/redes#redes'}>
               <li>Redes</li>
