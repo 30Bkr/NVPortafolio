@@ -15,8 +15,8 @@ const Redes = () => {
           <ul className='text-gray-900 mt-4  list-disc list-inside list-(var())'>
             <li>Elementos</li>
             <li>Medios de comunicación</li>
-            <li>Transmision de datos</li>
-            <li>Medios de transmision de datos</li>
+            <li>Transmisión de datos</li>
+            <li>Medios de transmisión de datos</li>
           </ul>
         </div>
         <div className='absolute right-0'>

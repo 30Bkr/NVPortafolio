@@ -15,7 +15,7 @@ export default function Page() {
           <ul className='list-decimal list-inside'>
             <li>
               <strong>
-                Servicio de paginas web
+                Servicio de páginas web
               </strong>
               {/* <h3>Servicio de páginas web</h3> */}
             </li>
@@ -28,7 +28,7 @@ export default function Page() {
               {`File Transfer Protocol (FTP): Protocolo de Transferencia de Archivos, utilizado para la transferencia de archivos entre computadoras a través de una red.`}
             </p>
             <li>
-              <strong>Servicios de correo electronico</strong>
+              <strong>Servicios de correo electrónico</strong>
               
             </li>
             <ul className='list-disc list-inside'>
@@ -89,7 +89,7 @@ export default function Page() {
             </li>
             <li>{`El protocolo HTTP (o HTTPS) define cómo se solicitan y se transfieren esas páginas desde el servidor al navegador.`}</li>
           </ul>
-          <li><strong>Correo electronico</strong></li>
+          <li><strong>Correo electrónico</strong></li>
           <ul className='list-disc list-inside ml-4'>
             <li>El servicio es el envío y recepción de mensajes.</li>
             <li>{`Los protocolos SMTP, POP3, e IMAP, son los que permiten que los mensajes sean enviados y recibidos correctamente.`}</li>
@@ -157,17 +157,17 @@ export default function Page() {
                 <li>No es un protocolo en sí mismo, sino un marco teórico que describe cómo deben interactuar los protocolos de comunicación.</li>
               </ul>
             </li>
-            <li><strong>Estructura en capaz:</strong>
+            <li><strong>Estructura en capas:</strong>
               <ul className='list-disc list-inside'>
                 <li>Divide el proceso de comunicación en siete capas distintas, cada una con funciones específicas.</li>
               </ul>
             </li>
-            <li><strong>Estandarizacion:</strong>
+            <li><strong>Estandarización:</strong>
               <ul className='list-disc list-inside'>
                 <li>Facilita la interoperabilidad entre sistemas de diferentes proveedores.</li>
               </ul>
             </li>
-            <li><strong>Resolucion de problemas:</strong>
+            <li><strong>Resolución de problemas:</strong>
               <ul className='list-disc list-inside'>
                 <li>Ayuda a identificar y solucionar problemas de red al aislar las funciones de cada capa.</li>
               </ul>
@@ -175,7 +175,7 @@ export default function Page() {
           </ul>
           <p>Las 7 capas del modelo OSI:</p>
           <ul className='list-decimal list-inside'>
-            <li><strong>{`Capa fisica (Physical Layer)`}</strong>
+            <li><strong>{`Capa física (Physical Layer)`}</strong>
               <ul className='list-disc list-inside'>
                 <li>{`Se encarga de la transmisión de bits a través del medio físico (cables, ondas, etc.).`}</li>
                 <li>Define las características eléctricas, mecánicas y funcionales de la conexión física.</li>
@@ -241,7 +241,7 @@ export default function Page() {
               </ul>
             </li>
           </ul>
-          <p>El modelo OSI es fundamental para entender cómo se comunican los dispositivos en una red y ayuda a los ingenieros y técnicos a diseñar y solucionar problemas en sistemas de comunicación. Aunque en la práctica no todos los protocolos siguen estrictamente este modelo, sigue siendo una referencia importante en el ámbito de las redes.</p>
+          <p>El Modelo OSI es fundamental para entender cómo se comunican los dispositivos en una red y ayuda a los ingenieros y técnicos a diseñar y solucionar problemas en sistemas de comunicación. Aunque en la práctica no todos los protocolos siguen estrictamente este modelo, sigue siendo una referencia importante en el ámbito de las redes.</p>
         </div>
 
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
@@ -273,7 +273,7 @@ export default function Page() {
               <p>Esta capa se ocupa de la transmisión de datos a través de la red física. Incluye las especificaciones de hardware y los protocolos que permiten la comunicación a través de diferentes medios físicos, como Ethernet, Wi-Fi y otros. A menudo, esta capa se refiere a la capa de enlace de datos y la capa física del modelo OSI.</p>
             </li>
           </ul>
-          <h3>Caracteristicas del modelo TCP/IP:</h3>
+          <h3>Características del Modelo TCP/IP:</h3>
           <ul className='list-disc list-inside'>
             <li><strong>Interoperabilidad</strong>: Permite que diferentes sistemas y dispositivos se comuniquen entre sí, independientemente de sus arquitecturas o plataformas.</li>
             <li><strong>Escalabilidad</strong>: Diseñado para crecer y adaptarse a una gran cantidad de dispositivos y redes.</li>
@@ -299,7 +299,7 @@ export default function Page() {
         <div id='cableado'>
           <h2>Elementos y Normas de Cableado estructurado</h2>
           <p>El cableado estructurado es un sistema de cableado genérico y organizado que permite la transmisión de señales de voz, datos y vídeo en un edificio o campus. Su objetivo es proporcionar una infraestructura de red flexible, escalable y confiable que pueda soportar diversas aplicaciones y tecnologías.</p>
-          <h3>Elemntos del cableado estructurado</h3>
+          <h3>Elementos del cableado estructurado</h3>
           <p>Un sistema de cableado estructurado se compone de los siguientes elementos principales:</p>
           <ul className='list-disc list-inside'>
             <li><strong>Cableado horizontal</strong>
@@ -446,7 +446,7 @@ export default function Page() {
                 </ul>
               </li>
             </ul>
-            <h3>Medicion del ancho de banda</h3>
+            <h3>Medición del ancho de banda</h3>
             <p>El ancho de banda se mide utilizando herramientas y técnicas especializadas, que incluyen:</p>
             <ul className='list-disc list-inside'>
               <li><strong>Pruebas de velocidad en línea:</strong>
@@ -517,7 +517,7 @@ export default function Page() {
         </div>
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
         <div id='redes'>
-          <h2>Tecnologias de redes</h2>
+          <h2>Tecnologías de redes</h2>
           <p>Las tecnologías de redes son el conjunto de hardware y software que permiten a los dispositivos comunicarse e intercambiar datos entre sí. Estas tecnologías abarcan una amplia gama de métodos y protocolos, desde las conexiones por cable tradicionales hasta las redes inalámbricas más modernas.</p>
           <p>Podemos compararlas de la siguiente manera:</p>
           <Image
@@ -533,7 +533,7 @@ export default function Page() {
               <p>{`Es una tecnología de red que utiliza una topología en anillo lógico.${<br></br>}Los datos se transmiten alrededor del anillo en un "token", y solo el nodo que posee el token puede transmitir datos.${<br></br>}Fue desarrollada por IBM en la década de 1980 y fue popular en redes de área local (LAN) en ese momento.`}</p>
               <ul>
                 <li>
-                  <strong>Caracteristicas:</strong>
+                  <strong>Características:</strong>
                   <ul className='list-disc list-inside'>
                     <li>Acceso determinista al medio: evita colisiones de datos.</li>
                     <li>Alta confiabilidad en redes con poco tráfico.</li>
@@ -556,7 +556,7 @@ export default function Page() {
               <p>{`Es la tecnología de red LAN más utilizada en la actualidad.${<br></br>}Utiliza una topología en estrella física y un protocolo de acceso al medio llamado CSMA/CD (Carrier Sense Multiple Access with Collision Detection) o CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) en versiones más modernas.${<br></br>}Permite la transmisión de datos a altas velocidades y es altamente escalable.`}</p>
               <ul>
                 <li>
-                  <strong>Caracteristicas</strong>
+                  <strong>Características</strong>
                   <ul className='list-disc list-inside'>
                     <li>Alta velocidad y rendimiento.
                     </li>
@@ -637,7 +637,7 @@ export default function Page() {
             Ancho de banda.
           </li>
           <li>
-            Tecnologia de redes.
+            Tecnología de redes.
           </li>
         </ul>
       </div>
