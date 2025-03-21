@@ -26,7 +26,7 @@ export const Cards = () => {
 
             <CardsItems title={'Ancho de banda'} image={'/velocidades.jpg'} path={'/infraestructura/#banda'}/>
 
-            <CardsItems title={'Tecnología de redes'} image={'/internet-Mundial.jpg'} path={'/infraestructura/#redes'}/>
+            <CardsItems title={'Tecnología de redes'} image={'/mundial.jpg'} path={'/infraestructura/#redes'}/>
 
             <CardsItems title={'Ver contenido completo'} image={'/redes.jpg'} path={'/infraestructura/#Servicios'}/>
         </div>
