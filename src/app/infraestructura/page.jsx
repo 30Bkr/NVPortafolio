@@ -150,7 +150,7 @@ export default function Page() {
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
           <p>{`El Modelo de Interconexión de Sistemas Abiertos (OSI, por sus siglas en inglés Open Systems Interconnection) es un modelo conceptual creado por la Organización Internacional de Normalización (ISO) en 1984. Su objetivo principal es estandarizar la comunicación entre diferentes sistemas informáticos, independientemente de su fabricante o tecnología.`}</p>
-          <h3>Caracteristicas principales:</h3>
+          <h3>Características principales:</h3>
           <ul className='list-disc list-inside'>
             <li><strong>Modelo de referencia:</strong>
               <ul className='list-disc list-inside'>
@@ -173,7 +173,7 @@ export default function Page() {
               </ul>
             </li>
           </ul>
-          <p>Las 7 capas del modelo OSI:</p>
+          <p>Las 7 capas del Modelo OSI:</p>
           <ul className='list-decimal list-inside'>
             <li><strong>{`Capa física (Physical Layer)`}</strong>
               <ul className='list-disc list-inside'>
@@ -541,7 +541,7 @@ export default function Page() {
                     <li>Velocidades de transmisión limitadas en comparación con tecnologías modernas.</li>
                   </ul>
                 </li>
-                <li><strong>Capas del modelo OSI:</strong>
+                <li><strong>Capas del Modelo OSI:</strong>
                   <ul className='list-disc list-inside'>
                     <li>{`Capa física (Physical Layer): Define las características eléctricas y mecánicas de la conexión.`}</li>
                     <li>
@@ -566,7 +566,7 @@ export default function Page() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Capas del modelo OSI</strong>
+                  <strong>Capas del Modelo OSI</strong>
                   <ul className='list-disc list-inside'>
                     <li>
                       {`Capa física (Physical Layer): Define las características de la conexión física.`}
@@ -600,7 +600,7 @@ export default function Page() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Capas del modelo OSI:</strong>
+                  <strong>Capas del Modelo OSI:</strong>
                   <ul className='list-disc list-inside'>
                     <li>{`Capa física (Physical Layer): Define las características de la transmisión de ondas de radio.`}</li>
                     <li>
