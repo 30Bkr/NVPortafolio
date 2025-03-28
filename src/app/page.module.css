@@ -30,15 +30,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100%;  
   font-size: x-large;
+  padding-top: 64px;
 }
 .blog h3{
   color: rgb(13, 13, 53);
   font-weight: 600;
   margin-bottom: 8px;
   font-size: large;
-  margin-top: 32px;
+  padding-top: 64px;
 }
 .blog p{
   margin-bottom: 8px;
@@ -49,4 +50,15 @@
 .blog ul ul{
   list-style: circle;
   margin-left: 32px;
+}
+@media  (max-width: 1299px) {
+  .contenedor{
+    margin: 0 4px;
+    width: 100%;
+  }
+  .cajon{
+    width: 100%;
+    margin: 0 4px;
+    
+  }
 }

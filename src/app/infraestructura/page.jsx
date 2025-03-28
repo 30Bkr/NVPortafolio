@@ -1,12 +1,18 @@
+'use client'
 import React from 'react'
 import styles from '../page.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 export default function Page() {
+  const pathname = usePathname()
+  console.log(pathname);
+  
   return (
-    <div className={`py-18 ${styles.contenedor} w-full grid grid-cols-4`}>
-      <div className={`col-span-3 ${styles.blog}`} id='contenido'>
+    <div className={`lg:py-18  px-2 lg:px-0 ${styles.contenedor} w-full lg:grid lg:grid-cols-4`}>
+      <div className={`lg:col-span-3 ${styles.blog} relative px-2`} id='contenido'>
 
-        <div id='Servicios' className='mt-8'>
+        <div id='Servicios'>
           <h2>Servicios y protocolos</h2>
           <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
@@ -105,7 +111,7 @@ export default function Page() {
         </div>
 
 
-        <div id='puertos' className='mt-8'>
+        <div id='puertos'>
           <h2>Puertos TCP / UDP</h2>
           <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
@@ -616,30 +622,53 @@ export default function Page() {
 
       </div>
 
-      <div id='side-bar' className='col-span-1'>
-        <ul>
-          <li>
-            Servicios y protocolos de red.
-          </li>
-          <li>
-            Puertos TCP/UDP.
-          </li>
-          <li>
-            Modelo OSI.
-          </li>
-          <li>
-            Modelo TCP/IP.
-          </li>
-          <li>
-            Elementos y Normas de Cableado Estructurado.
-          </li>
-          <li>
-            Ancho de banda.
-          </li>
-          <li>
-            Tecnología de redes.
-          </li>
-        </ul>
+      <div id='side-bar' className='lg:col-span-1 lg:relative lg:pt-16 lg:flex hidden'>
+        <div className='lg:fixed'>
+          <ul>
+            <Link href={'/infraestructura/#Servicios'}>
+              <li className='text-xl mb-2 border-b-1 border-solid'>
+                Servicios y protocolos de 
+              </li>
+            </Link>
+            <Link href={'/infraestructura/#puertos'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Puertos TCP/UDP.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#OSI'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Modelo OSI.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#TCP'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Modelo TCP/IP.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#cableado'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Elementos y Normas de Cableado Estructurado.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#banda'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Ancho de banda.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#redes'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Tecnología de redes.
+            </li>
+            </Link>
+
+          </ul>
+        </div>
+
       </div>
     </div>
   );

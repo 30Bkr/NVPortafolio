@@ -6,8 +6,8 @@ const PreFooter = () => {
   return (
     <div className={`${styles.preFooter}`}> 
       <Perfil name={'Neudelys Solano'} image={'/lys.jpeg'}/>
-      <Perfil name={'Briant Carrillo'} image={'/lys.jpeg'}/>
-      <Perfil name={'Yusmely Araque'} image={'/lys.jpeg'}/>
+      <Perfil name={'Briant Carrillo'} image={'/briantU.jpeg'}/>
+      <Perfil name={'Yusmely Araque'} image={'/yusmelyU.png'}/>
     </div>
   )
 }
