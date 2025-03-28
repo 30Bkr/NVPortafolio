@@ -21,10 +21,10 @@ const Redes = () => {
              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Medios de comunicación</li>
             </Link>
             <Link href={'/redes#transmision'}>
-              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Transmision de datos</li>
+              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Transmisión de datos</li>
             </Link>
             <Link href={'/redes#medios2'}>
-              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Medios de transmision de datos</li>
+              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Medios de transmisión de datos</li>
             </Link>
           </ul>
         </div>

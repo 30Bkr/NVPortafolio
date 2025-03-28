@@ -21,7 +21,7 @@ export default function Page() {
           <ul className='list-decimal list-inside'>
             <li>
               <strong>
-                Servicio de paginas web
+                Servicio de páginas web
               </strong>
               {/* <h3>Servicio de páginas web</h3> */}
             </li>
@@ -34,7 +34,7 @@ export default function Page() {
               {`File Transfer Protocol (FTP): Protocolo de Transferencia de Archivos, utilizado para la transferencia de archivos entre computadoras a través de una red.`}
             </p>
             <li>
-              <strong>Servicios de correo electronico</strong>
+              <strong>Servicios de correo electrónico</strong>
               
             </li>
             <ul className='list-disc list-inside'>
@@ -179,7 +179,7 @@ export default function Page() {
               </ul>
             </li>
           </ul>
-          <p>Las 7 capas del modelo OSI:</p>
+          <p>Las 7 capas del Modelo OSI:</p>
           <ul className='list-decimal list-inside'>
             <li><strong>{`Capa física (Physical Layer)`}</strong>
               <ul className='list-disc list-inside'>
@@ -247,7 +247,7 @@ export default function Page() {
               </ul>
             </li>
           </ul>
-          <p>El modelo OSI es fundamental para entender cómo se comunican los dispositivos en una red y ayuda a los ingenieros y técnicos a diseñar y solucionar problemas en sistemas de comunicación. Aunque en la práctica no todos los protocolos siguen estrictamente este modelo, sigue siendo una referencia importante en el ámbito de las redes.</p>
+          <p>El Modelo OSI es fundamental para entender cómo se comunican los dispositivos en una red y ayuda a los ingenieros y técnicos a diseñar y solucionar problemas en sistemas de comunicación. Aunque en la práctica no todos los protocolos siguen estrictamente este modelo, sigue siendo una referencia importante en el ámbito de las redes.</p>
         </div>
 
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
@@ -305,7 +305,7 @@ export default function Page() {
         <div id='cableado'>
           <h2>Elementos y Normas de Cableado estructurado</h2>
           <p>El cableado estructurado es un sistema de cableado genérico y organizado que permite la transmisión de señales de voz, datos y vídeo en un edificio o campus. Su objetivo es proporcionar una infraestructura de red flexible, escalable y confiable que pueda soportar diversas aplicaciones y tecnologías.</p>
-          <h3>Elemntos del cableado estructurado</h3>
+          <h3>Elementos del cableado estructurado</h3>
           <p>Un sistema de cableado estructurado se compone de los siguientes elementos principales:</p>
           <ul className='list-disc list-inside'>
             <li><strong>Cableado horizontal</strong>
@@ -547,7 +547,7 @@ export default function Page() {
                     <li>Velocidades de transmisión limitadas en comparación con tecnologías modernas.</li>
                   </ul>
                 </li>
-                <li><strong>Capas del modelo OSI:</strong>
+                <li><strong>Capas del Modelo OSI:</strong>
                   <ul className='list-disc list-inside'>
                     <li>{`Capa física (Physical Layer): Define las características eléctricas y mecánicas de la conexión.`}</li>
                     <li>
@@ -572,7 +572,7 @@ export default function Page() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Capas del modelo OSI</strong>
+                  <strong>Capas del Modelo OSI</strong>
                   <ul className='list-disc list-inside'>
                     <li>
                       {`Capa física (Physical Layer): Define las características de la conexión física.`}
@@ -606,7 +606,7 @@ export default function Page() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Capas del modelo OSI:</strong>
+                  <strong>Capas del Modelo OSI:</strong>
                   <ul className='list-disc list-inside'>
                     <li>{`Capa física (Physical Layer): Define las características de la transmisión de ondas de radio.`}</li>
                     <li>
