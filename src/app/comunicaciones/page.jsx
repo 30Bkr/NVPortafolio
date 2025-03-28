@@ -75,13 +75,13 @@ export default function Page() {
           <p>Son los soportes que se utilizan para interconectar los dispositivos de una red. Pueden ser cableados o inalámbricos. En donde permite el envío y recepción de datos, permite la creación de almacenamiento de datos, permite el intercambio de archivos, permite las videollamadas y  permite la transmisión de información. Entre los medios de conexión de redes tenemos:</p>
           <ul>
             <li>
-              <strong>El cableado de cobre:</strong>Es el más antiguo de los sistemas ya que data de fechas antes de internet o de sistemas de conectividad de datos. Se conoce comúnmente como “Par Trenzado”,  y puede ser con o sin blindaje, con blindaje global o por par, según sus características se definen como U/UTP, U/UTF, etc…
+              <strong>El cableado de cobre:</strong> Es el más antiguo de los sistemas ya que data de fechas antes de internet o de sistemas de conectividad de datos. Se conoce comúnmente como “Par Trenzado”,  y puede ser con o sin blindaje, con blindaje global o por par, según sus características se definen como U/UTP, U/UTF, etc…
             </li>
             <li>
-              <strong>Fibra óptica:</strong>Es una tecnología que permite transmitir datos a través de hilos delgados de un material especial de alta transparencia, que puede ser bien vidrio o polímero. La fibra óptica maneja mejor los anchos de banda que el cobre y puede extenderse largas distancias sin pérdidas, permitiendo velocidades de hasta 10 GBPS en distancias de hasta 40KM.
+              <strong>Fibra óptica:</strong> Es una tecnología que permite transmitir datos a través de hilos delgados de un material especial de alta transparencia, que puede ser bien vidrio o polímero. La fibra óptica maneja mejor los anchos de banda que el cobre y puede extenderse largas distancias sin pérdidas, permitiendo velocidades de hasta 10 GBPS en distancias de hasta 40KM.
             </li>
             <li>
-              <strong>Radiofrecuencia:</strong>Son sistemas que funcionan vía ondas de radio, y tal como se visualizan en sistemas de radiodifusión, funcionan en frecuencias. Las frecuencias más comunes son 2,4, 5, 12 y 24 hz; sin embargo, se debe tener presente que en cada país, se contemplan leyes que permiten o no el uso libre de las mismas.
+              <strong>Radiofrecuencia:</strong> Son sistemas que funcionan vía ondas de radio, y tal como se visualizan en sistemas de radiodifusión, funcionan en frecuencias. Las frecuencias más comunes son 2,4, 5, 12 y 24 hz; sin embargo, se debe tener presente que en cada país, se contemplan leyes que permiten o no el uso libre de las mismas.
             </li>
           </ul>
         </div>

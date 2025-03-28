@@ -19,7 +19,7 @@ export const CardsItems = ({ title, image, path }) => {
       <div className='h-full flex flex-col items-center pt-4'>
         <h2 className='font-bold text-xl text-black text-center'>{title}</h2>
       <Link href={path}>
-        <p className='hover:underline underline-offset-1 font-light text-blue-500'>Conoce más Aquí</p>
+        <p className='hover:underline underline-offset-1 font-light text-blue-500'>Conoce más aquí</p>
       </Link>
       </div>
     </div>

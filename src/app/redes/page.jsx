@@ -21,13 +21,13 @@ export default function Page() {
               <strong>Emisor</strong>: Es la entidad que genera y envía el mensaje. Puede ser una persona, un dispositivo o un sistema que produce información. Por ejemplo, un usuario que envía un correo electrónico desde su computadora.
             </li>
             <li>
-              <strong>Mensaje</strong>:Es la información que se desea comunicar. Puede ser en forma de texto, audio, video, entre otros formatos.  Por ejemplo, el correo electrónico con su texto adjunto.
+              <strong>Mensaje</strong>: Es la información que se desea comunicar. Puede ser en forma de texto, audio, video, entre otros formatos.  Por ejemplo, el correo electrónico con su texto adjunto.
             </li>
             <li>
-              <strong>Medio</strong>:Es el canal a través del cual se transmite el mensaje. Puede ser físico, como cables, o virtual, como redes inalámbricas. Por ejemplo, la conexión a Internet a través de Wi-Fi.
+              <strong>Medio</strong>: Es el canal a través del cual se transmite el mensaje. Puede ser físico, como cables, o virtual, como redes inalámbricas. Por ejemplo, la conexión a Internet a través de Wi-Fi.
             </li>
             <li>
-              <strong>Receptor</strong>:Es la entidad que recibe el mensaje. Al igual que el emisor, puede ser una persona, un dispositivo o un sistema que interpreta la información recibida. Por ejemplo, el servidor de correo electrónico del destinatario.
+              <strong>Receptor</strong>: Es la entidad que recibe el mensaje. Al igual que el emisor, puede ser una persona, un dispositivo o un sistema que interpreta la información recibida. Por ejemplo, el servidor de correo electrónico del destinatario.
             </li>
           </ul>
           <p>La interacción de estos elementos es fundamental para garantizar la comunicación efectiva en cualquier red, ya sea una red doméstica o una red global como Internet.</p>
@@ -38,7 +38,7 @@ export default function Page() {
           <p>Los medios de comunicación se dividen en dos categorías principales:</p>
           <ul className='list-disc list-inside'>
             <li>
-              <strong>{`Medio Alambricos (Guiados)`}</strong>:Son aquellos que utilizan cables o conductores para transmitir datos. Ejemplos incluyen:
+              <strong>{`Medio Alámbricos (Guiados)`}</strong>: Son aquellos que utilizan cables o conductores para transmitir datos. Ejemplos incluyen:
               <ul className='list-disc list-inside'>
                 <li>
                 Cables de par trenzado.
@@ -52,7 +52,7 @@ export default function Page() {
               </ul>
             </li>
             <li>
-              <strong>{`Medios Inalámbricos (No Guiados)`}</strong>:Son aquellos que transmiten datos a través de ondas electromagnéticas, sin necesidad de cables. Ejemplos incluyen:
+              <strong>{`Medios Inalámbricos (No Guiados)`}</strong>: Son aquellos que transmiten datos a través de ondas electromagnéticas, sin necesidad de cables. Ejemplos incluyen:
               <ul className='list-disc list-inside'>
                 <li>Wifi</li>
                 <li>Bluetooth</li>
@@ -71,13 +71,13 @@ export default function Page() {
               <strong>Unidades de Transmisión</strong>: Son las cantidades de datos que se envían en un solo evento de transmisión. Esto puede incluir paquetes, tramas o bits.
             </li>
             <li>
-              <strong>Medios</strong>:{`Se refiere a los canales utilizados para la transmisión de datos, que pueden ser guiados (cableados) o no guiados (inalámbricos), como se mencionó anteriormente.`}
+              <strong>Medios</strong>:{` Se refiere a los canales utilizados para la transmisión de datos, que pueden ser guiados (cableados) o no guiados (inalámbricos), como se mencionó anteriormente.`}
             </li>
             <li>
               <strong>Formas de transmisión</strong>:
               <ul className='list-disc list-inside'>
-                <li><strong>Serie</strong>:En la transmisión en serie, los datos se envían un bit a la vez a través de un solo canal. Esto es común en conexiones de larga distancia, ya que reduce el número de líneas necesarias.</li>
-                <li><strong>Paralelo</strong>:En la transmisión en paralelo, múltiples bits se envían simultáneamente a través de varios canales. Esto puede aumentar la velocidad de transmisión, pero es más adecuado para distancias cortas debido a problemas de sincronización y interferencia.</li>
+                <li><strong>Serie</strong>: En la transmisión en serie, los datos se envían un bit a la vez a través de un solo canal. Esto es común en conexiones de larga distancia, ya que reduce el número de líneas necesarias.</li>
+                <li><strong>Paralelo</strong>: En la transmisión en paralelo, múltiples bits se envían simultáneamente a través de varios canales. Esto puede aumentar la velocidad de transmisión, pero es más adecuado para distancias cortas debido a problemas de sincronización y interferencia.</li>
               </ul>
             </li>
           </ul>
@@ -88,12 +88,12 @@ export default function Page() {
           <p>Los modos de transmisión de datos son las formas en las que se transfieren datos de un punto a otro. Algunos de los modos de transmisión de datos son:</p>
           <ul className='list-disc list-inside'>
             <li>
-              <strong>Simplex</strong>:Se transmiten datos en una sola dirección. De este modo, un dispositivo es el emisor y el otro es el receptor. El modo simplex es una forma de comunicación sencilla y asimétrica, que no permite la retroalimentación. Por ejemplo: Radio y televisión.
+              <strong>Simplex</strong>: Se transmiten datos en una sola dirección. De este modo, un dispositivo es el emisor y el otro es el receptor. El modo simplex es una forma de comunicación sencilla y asimétrica, que no permite la retroalimentación. Por ejemplo: Radio y televisión.
             </li>
             <li>
-              <strong>Half-dúplex</strong>:Se transmiten datos en dos direcciones, pero no de forma simultánea. De este modo, los datos se mueven en una sola dirección a la vez, por lo que se considera una vía de un solo sentido. Por ejemplo: Walkie-talkie.
+              <strong>Half-dúplex</strong>: Se transmiten datos en dos direcciones, pero no de forma simultánea. De este modo, los datos se mueven en una sola dirección a la vez, por lo que se considera una vía de un solo sentido. Por ejemplo: Walkie-talkie.
             </li>
-            <li><strong>Full dúplex</strong>:Se transmiten datos en ambas direcciones de forma simultánea. De esta manera, los datos se envían y reciben a través de canales separados, que funcionan de forma independiente. Esto permite que los dispositivos transmitan y reciban datos al mismo tiempo sin conflictos. El full dúplex es la forma más común de transferencia de datos y es la más rápida. Sin embargo, requiere equipos más costosos.</li>
+            <li><strong>Full dúplex</strong>: Se transmiten datos en ambas direcciones de forma simultánea. De esta manera, los datos se envían y reciben a través de canales separados, que funcionan de forma independiente. Esto permite que los dispositivos transmitan y reciban datos al mismo tiempo sin conflictos. El full dúplex es la forma más común de transferencia de datos y es la más rápida. Sin embargo, requiere equipos más costosos.</li>
           </ul>
         </div>
       </div>
