@@ -13,13 +13,6 @@ const Redes = () => {
           <h2 className='text-xl text-blue-800 mb-4'>Redes informáticas</h2>
           <p className='text-3xl text-slate-900 font-semibold mb-4'>¿Son las Redes el tejido invisible que conecta nuestro mundo?</p>
           <p className='text-gray-900 '>En la era digital, las redes informáticas son mucho más que cables y routers. Son el lenguaje secreto que permite la comunicación instantánea y el intercambio de información a escala global. ¿Te atreves a descifrarlo? Si la respuesta es “sí”, aquí podrás conocer:</p>
-<<<<<<< HEAD
-          <ul className='text-gray-900 mt-4  list-disc list-inside list-(var())'>
-            <li>Elementos</li>
-            <li>Medios de comunicación</li>
-            <li>Transmisión de datos</li>
-            <li>Medios de transmisión de datos</li>
-=======
           <ul className='text-gray-900 mt-4 list-inside list-(var())'>
             <Link href={'/redes#elementos'}>
               <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Elementos</li>
@@ -28,12 +21,11 @@ const Redes = () => {
              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Medios de comunicación</li>
             </Link>
             <Link href={'/redes#transmision'}>
-              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Transmision de datos</li>
+              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Transmisión de datos</li>
             </Link>
             <Link href={'/redes#medios2'}>
-              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Medios de transmision de datos</li>
+              <li className='text-blue-600 hover:underline underline-offset-1 pl-4'>Medios de transmisión de datos</li>
             </Link>
->>>>>>> 9ef042aa18df579823584a2dfe33e517f39b9ec0
           </ul>
         </div>
         <div className='lg:absolute lg:right-0 px-4 mt-4 rounded-'>
