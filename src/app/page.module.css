@@ -23,3 +23,42 @@
 .font{
   font-family: 'Montserrat';
 }
+.blog h2{
+  color: rgb(27, 10, 98);
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;  
+  font-size: x-large;
+  padding-top: 64px;
+}
+.blog h3{
+  color: rgb(13, 13, 53);
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: large;
+  padding-top: 64px;
+}
+.blog p{
+  margin-bottom: 8px;
+}
+.blog ul{
+  margin-left: 8px;
+}
+.blog ul ul{
+  list-style: circle;
+  margin-left: 32px;
+}
+@media  (max-width: 1299px) {
+  .contenedor{
+    margin: 0 4px;
+    width: 100%;
+  }
+  .cajon{
+    width: 100%;
+    margin: 0 4px;
+    
+  }
+}

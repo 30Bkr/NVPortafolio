@@ -14,6 +14,9 @@
 .this{
   padding: 0px 200px 0px 200px;
 }
+.nav{
+  display: flex;
+}
 @keyframes blur {
   to{
     z-index: 100;
@@ -24,18 +27,24 @@
     backdrop-filter: blur(10px);
   }
 }
-/* .header2{
-  width: 100%;
-  padding: 0px 200px 0px 200px;
-  animation: blur2 linear both ;
-  animation-timeline: scroll();
-  animation-range: 0 232px;
-}
-@keyframes blur2 {
-  to{
-    box-shadow: 0px 5px 50px -5px rgba(0,0,0,.1);
-    box-shadow: 0px 0px 0px 1px rgba(0,0,0,.3);
-    background: rgba(0,0,0,.3);
-    backdrop-filter: blur(10px);
+@media  (max-width: 1299px) {
+  .header{
+    padding: 0 4px;
+    animation: none;
   }
-} */
+  .nav{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 61px;
+    left: -0px;
+    width: 100vw;
+    transition: all .6s ease-in-out;
+    text-align: center;
+    background: rgb(32, 32, 32);
+  }
+  .nav li{
+    padding: 8px 0;
+  }
+}

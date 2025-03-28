@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="relative">
-      <body className="relative">
+      <body className="relative lg:overflow-auto overflow-x-hidden">
         <Header/>
         {children}
         <Footer/>

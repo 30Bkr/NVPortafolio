@@ -1,31 +1,41 @@
+'use client'
 import React from 'react'
 import styles from '../page.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 export default function Page() {
+  const pathname = usePathname()
+  console.log(pathname);
+  
   return (
-    <div className={`py-18 ${styles.contenedor} w-full grid grid-cols-4`}>
-      <div className='col-span-3 bg-red-300' id='contenido'>
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+    <div className={`lg:py-18  px-2 lg:px-0 ${styles.contenedor} w-full lg:grid lg:grid-cols-4`}>
+      <div className={`lg:col-span-3 ${styles.blog} relative px-2`} id='contenido'>
 
         <div id='Servicios'>
           <h2>Servicios y protocolos</h2>
+          <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
+
           <h3>Servicios de red</h3>
           <p>Los servicios de redes son aplicaciones y funcionalidades que permiten a los dispositivos en una red comunicarse y compartir recursos. Estos servicios son esenciales para el funcionamiento de Internet y las redes locales. Algunos ejemplos incluyen:</p>
           <ul className='list-decimal list-inside'>
             <li>
-              Servicio de paginas web
+              <strong>
+                Servicio de páginas web
+              </strong>
               {/* <h3>Servicio de páginas web</h3> */}
             </li>
             <p>Hypertext Transfer Protocol / Hypertext Transfer Protocol Secure (HTTP/HTTPS): Protocolo de Transferencia de Hipertexto, el cual permite el acceso a páginas web y otros contenidos en línea.</p>
-            <li>
-              Servicio de transferencia de archivo
+            <li><strong>Servicio de transferencia de archivo</strong>
+              
               {/* <h3>Servicio de transferencia de archivos</h3> */}
             </li>
             <p>
               {`File Transfer Protocol (FTP): Protocolo de Transferencia de Archivos, utilizado para la transferencia de archivos entre computadoras a través de una red.`}
             </p>
             <li>
-              Servicios de correo electronico
+              <strong>Servicios de correo electrónico</strong>
+              
             </li>
             <ul className='list-disc list-inside'>
               <li>
@@ -38,27 +48,30 @@ export default function Page() {
                 {`Internet Message Access Protocol (IMAP): Protocolo de Acceso a Mensajes de Internet, también es utilizado para la recuperación de correos electrónicos, pero a diferencia de POP3, permite a los usuarios acceder y gestionar sus correos electrónicos directamente en el servidor. Esto significa que los correos se pueden ver desde múltiples dispositivos sin ser eliminados del servidor.`}
               </li>
             </ul>
-            <li>Servicio de nombres de dominio</li>
+            <li><strong>Servicio de nombres de dominio</strong></li>
             <p>{`Domain Name System (DNS): Sistema de Nombres de Dominio, que traduce nombres de dominio (como "google.com") a direcciones IP (como "172.217.160.142"), lo que facilita el acceso a sitios web y otros recursos en línea.`}</p>
-            <li>Servicio de red</li>
+            <li><strong>Servicio de red</strong></li>
             <p>{`Dynamic Host Configuration Protocol (DHCP): Protocolo de Configuración Dinámica de Host, que asigna  automáticamente direcciones IP y otros parámetros a los dispositivos en una red.`}</p>
           </ul>
-          <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
           <h3>Protocolos de red</h3>
           <p>Los protocolos de redes son conjuntos de reglas y estándares que definen cómo los dispositivos se comunican a través de una red. Estos protocolos aseguran que los datos se transmitan de manera confiable y eficiente. Algunos de los protocolos más importantes incluyen:</p>
           <ul className='list-decimal list-inside'>
-          <li>Protocolo de Internet / Internet Protocol (IP): Es el protocolo fundamental que define cómo se direccionan y enrutan los paquetes de datos a través de Internet. Existen dos versiones principales:</li>
-          <ul className='list-disc list-inside'>
-            <li>IPv4: Utiliza direcciones de 32 bits.</li>
-            <li>IPv6: Utiliza direcciones de 128 bits y se diseñó para reemplazar IPv4 debido a la escasez de direcciones.</li>
-          </ul>
-          <li>{`Protocolo de Control de Transmisión / Transmission Control Protocol (TCP): Proporciona una conexión confiable y orientada a la conexión para la transmisión de datos.`}</li>
-          <li>{`Protocolo de Datagramas de Usuario / User Datagram Protocol (UDP): Permite la transmisión de datos sin la sobrecarga de conexión que tiene TCP, ideal para aplicaciones que requieren velocidad, como el streaming.`}</li>
-          <li>{`Protocolo de Transferencia de Hipertexto / Hypertext Transfer Protocol (HTTP): Define cómo se transfieren las páginas web y otros contenidos en línea.`}</li>
-          <li>{`Protocolo de Transferencia de Archivos / File Transfer Protocol (FTP): Permite la transferencia de archivos entre un cliente y un servidor.`}</li>
-          <li>{`Protocolo de Resolución de Direcciones / Address Resolution Protocol (ARP): Se utiliza para mapear direcciones IP a direcciones MAC en una red local.`}</li>
+            <li><strong>Protocolo de Internet / Internet Protocol {`(IP)`}</strong>
+             <p>Es el protocolo fundamental que define cómo se direccionan y enrutan los paquetes de datos a través de Internet. Existen dos versiones principales:</p> 
+              <ul className='list-disc list-inside'>
+                <li>IPv4: Utiliza direcciones de 32 bits.</li>
+                <li>IPv6: Utiliza direcciones de 128 bits y se diseñó para reemplazar IPv4 debido a la escasez de direcciones.</li>
+              </ul>
+            </li>
+          <li> <strong>Protocolo de Control de Transmisión / Transmission Control Protocol {`(TCP)`} </strong>
+            <p>Proporciona una conexión confiable y orientada a la conexión para la transmisión de datos.</p>
+          </li>
+          <li><strong>Protocolo de Datagramas de Usuario / User Datagram Protocol {`(UDP)`}</strong> 
+          <p>Permite la transmisión de datos sin la sobrecarga de conexión que tiene TCP, ideal para aplicaciones que requieren velocidad, como el streaming.</p></li>
+          <li><strong>Protocolo de Transferencia de Hipertexto / Hypertext Transfer Protocol {`(HTTP)`}</strong> <p>Define cómo se transfieren las páginas web y otros contenidos en línea.</p></li>
+          <li><strong>Protocolo de Transferencia de Archivos / File Transfer Protocol {`(FTP)`}</strong> <p>Permite la transferencia de archivos entre un cliente y un servidor.</p></li>
+          <li><strong>Protocolo de Resolución de Direcciones / Address Resolution Protocol {`(ARP)`}</strong> Se utiliza para mapear direcciones IP a direcciones MAC en una red local.</li>
         </ul>
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
         <h3>La interdependencia: Servicios y protocolos trabajando juntos</h3>
         <p>La relación entre servicios y protocolos de red es fundamental y de interdependencia. Podemos entenderla mejor con la siguiente analogía:</p>
         <ul className='list-disc list-inside'>
@@ -76,13 +89,13 @@ export default function Page() {
         />
         <h3>Ejemplos</h3>
         <ul className='list-disc list-inside'>
-          <li><strong>Navegacion web</strong></li>
+          <li><strong>Navegación web</strong></li>
           <ul className='list-disc list-inside ml-4'>
             <li>El servicio es la visualización de páginas web en tu navegador.
             </li>
             <li>{`El protocolo HTTP (o HTTPS) define cómo se solicitan y se transfieren esas páginas desde el servidor al navegador.`}</li>
           </ul>
-          <li><strong>Correo electronico</strong></li>
+          <li><strong>Correo electrónico</strong></li>
           <ul className='list-disc list-inside ml-4'>
             <li>El servicio es el envío y recepción de mensajes.</li>
             <li>{`Los protocolos SMTP, POP3, e IMAP, son los que permiten que los mensajes sean enviados y recibidos correctamente.`}</li>
@@ -97,10 +110,11 @@ export default function Page() {
         </ul>
         </div>
 
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
 
         <div id='puertos'>
           <h2>Puertos TCP / UDP</h2>
+          <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
+
           <p>
           Los puertos son puntos de comunicación virtual donde las aplicaciones se conectan para enviar y recibir datos. Se representan como números de 16 bits, lo que significa que pueden variar de 0 a 65535. En este sentido, las aplicaciones utilizan números de puerto para poder comunicarse entre sí. Por ejemplo, el puerto 80 es utilizado para el protocolo HTTP, y el 443 para el protocolo HTTPS.
           </p>
@@ -139,33 +153,35 @@ export default function Page() {
 
         <div id='OSI'>
           <h2>Modelo OSI</h2>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
+
           <p>{`El Modelo de Interconexión de Sistemas Abiertos (OSI, por sus siglas en inglés Open Systems Interconnection) es un modelo conceptual creado por la Organización Internacional de Normalización (ISO) en 1984. Su objetivo principal es estandarizar la comunicación entre diferentes sistemas informáticos, independientemente de su fabricante o tecnología.`}</p>
-          <h3>Caracteristicas principales:</h3>
+          <h3>Características principales:</h3>
           <ul className='list-disc list-inside'>
             <li><strong>Modelo de referencia:</strong>
               <ul className='list-disc list-inside'>
                 <li>No es un protocolo en sí mismo, sino un marco teórico que describe cómo deben interactuar los protocolos de comunicación.</li>
               </ul>
             </li>
-            <li><strong>Estructura en capaz:</strong>
+            <li><strong>Estructura en capas:</strong>
               <ul className='list-disc list-inside'>
                 <li>Divide el proceso de comunicación en siete capas distintas, cada una con funciones específicas.</li>
               </ul>
             </li>
-            <li><strong>Estandarizacion:</strong>
+            <li><strong>Estandarización:</strong>
               <ul className='list-disc list-inside'>
                 <li>Facilita la interoperabilidad entre sistemas de diferentes proveedores.</li>
               </ul>
             </li>
-            <li><strong>Resolucion de problemas:</strong>
+            <li><strong>Resolución de problemas:</strong>
               <ul className='list-disc list-inside'>
                 <li>Ayuda a identificar y solucionar problemas de red al aislar las funciones de cada capa.</li>
               </ul>
             </li>
           </ul>
-          <p>Las 7 capas del modelo OSI:</p>
+          <p>Las 7 capas del Modelo OSI:</p>
           <ul className='list-decimal list-inside'>
-            <li><strong>{`Capa fisica (Physical Layer)`}</strong>
+            <li><strong>{`Capa física (Physical Layer)`}</strong>
               <ul className='list-disc list-inside'>
                 <li>{`Se encarga de la transmisión de bits a través del medio físico (cables, ondas, etc.).`}</li>
                 <li>Define las características eléctricas, mecánicas y funcionales de la conexión física.</li>
@@ -231,10 +247,10 @@ export default function Page() {
               </ul>
             </li>
           </ul>
-          <p>El modelo OSI es fundamental para entender cómo se comunican los dispositivos en una red y ayuda a los ingenieros y técnicos a diseñar y solucionar problemas en sistemas de comunicación. Aunque en la práctica no todos los protocolos siguen estrictamente este modelo, sigue siendo una referencia importante en el ámbito de las redes.</p>
+          <p>El Modelo OSI es fundamental para entender cómo se comunican los dispositivos en una red y ayuda a los ingenieros y técnicos a diseñar y solucionar problemas en sistemas de comunicación. Aunque en la práctica no todos los protocolos siguen estrictamente este modelo, sigue siendo una referencia importante en el ámbito de las redes.</p>
         </div>
 
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
         <div id='TCP'>
           <h2>Modelo TCP/IP</h2>
@@ -263,7 +279,7 @@ export default function Page() {
               <p>Esta capa se ocupa de la transmisión de datos a través de la red física. Incluye las especificaciones de hardware y los protocolos que permiten la comunicación a través de diferentes medios físicos, como Ethernet, Wi-Fi y otros. A menudo, esta capa se refiere a la capa de enlace de datos y la capa física del modelo OSI.</p>
             </li>
           </ul>
-          <h3>Caracteristicas del modelo TCP/IP:</h3>
+          <h3>Características del Modelo TCP/IP:</h3>
           <ul className='list-disc list-inside'>
             <li><strong>Interoperabilidad</strong>: Permite que diferentes sistemas y dispositivos se comuniquen entre sí, independientemente de sus arquitecturas o plataformas.</li>
             <li><strong>Escalabilidad</strong>: Diseñado para crecer y adaptarse a una gran cantidad de dispositivos y redes.</li>
@@ -283,13 +299,13 @@ export default function Page() {
           />
         </div>
 
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
         
         <div id='cableado'>
           <h2>Elementos y Normas de Cableado estructurado</h2>
           <p>El cableado estructurado es un sistema de cableado genérico y organizado que permite la transmisión de señales de voz, datos y vídeo en un edificio o campus. Su objetivo es proporcionar una infraestructura de red flexible, escalable y confiable que pueda soportar diversas aplicaciones y tecnologías.</p>
-          <h3>Elemntos del cableado estructurado</h3>
+          <h3>Elementos del cableado estructurado</h3>
           <p>Un sistema de cableado estructurado se compone de los siguientes elementos principales:</p>
           <ul className='list-disc list-inside'>
             <li><strong>Cableado horizontal</strong>
@@ -330,7 +346,7 @@ export default function Page() {
           <h3>Normas de cableado estructurado:</h3>
           <p>Existen diversas normas que definen los requisitos y estándares para el diseño e instalación de sistemas de cableado estructurado. Algunas de las más importantes son:</p>
           <ul className='list-disc list-inside'>
-            <li><strgon>TIA/EIA-568:</strgon>
+            <li><strong>TIA/EIA-568:</strong>
               <ul className='list-disc list-inside'>
                 <li>{`Desarrollada por la Asociación de Industrias de Telecomunicaciones (TIA) y la Alianza de Industrias Electrónicas (EIA).`}</li>
                 <li>Es la norma más utilizada en América del Norte.</li>
@@ -398,7 +414,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
 
         <div id='banda'>
           <h2>Ancho de banda</h2>
@@ -436,7 +452,7 @@ export default function Page() {
                 </ul>
               </li>
             </ul>
-            <h3>Medicion del ancho de banda</h3>
+            <h3>Medición del ancho de banda</h3>
             <p>El ancho de banda se mide utilizando herramientas y técnicas especializadas, que incluyen:</p>
             <ul className='list-disc list-inside'>
               <li><strong>Pruebas de velocidad en línea:</strong>
@@ -505,9 +521,9 @@ export default function Page() {
               </li>
             </ul>
         </div>
-        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
+        <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mb-8"/>
         <div id='redes'>
-          <h2>Tecnologias de redes</h2>
+          <h2>Tecnologías de redes</h2>
           <p>Las tecnologías de redes son el conjunto de hardware y software que permiten a los dispositivos comunicarse e intercambiar datos entre sí. Estas tecnologías abarcan una amplia gama de métodos y protocolos, desde las conexiones por cable tradicionales hasta las redes inalámbricas más modernas.</p>
           <p>Podemos compararlas de la siguiente manera:</p>
           <Image
@@ -523,7 +539,7 @@ export default function Page() {
               <p>{`Es una tecnología de red que utiliza una topología en anillo lógico.${<br></br>}Los datos se transmiten alrededor del anillo en un "token", y solo el nodo que posee el token puede transmitir datos.${<br></br>}Fue desarrollada por IBM en la década de 1980 y fue popular en redes de área local (LAN) en ese momento.`}</p>
               <ul>
                 <li>
-                  <strong>Caracteristicas:</strong>
+                  <strong>Características:</strong>
                   <ul className='list-disc list-inside'>
                     <li>Acceso determinista al medio: evita colisiones de datos.</li>
                     <li>Alta confiabilidad en redes con poco tráfico.</li>
@@ -531,7 +547,7 @@ export default function Page() {
                     <li>Velocidades de transmisión limitadas en comparación con tecnologías modernas.</li>
                   </ul>
                 </li>
-                <li><strong>Capas del modelo OSI:</strong>
+                <li><strong>Capas del Modelo OSI:</strong>
                   <ul className='list-disc list-inside'>
                     <li>{`Capa física (Physical Layer): Define las características eléctricas y mecánicas de la conexión.`}</li>
                     <li>
@@ -546,7 +562,7 @@ export default function Page() {
               <p>{`Es la tecnología de red LAN más utilizada en la actualidad.${<br></br>}Utiliza una topología en estrella física y un protocolo de acceso al medio llamado CSMA/CD (Carrier Sense Multiple Access with Collision Detection) o CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance) en versiones más modernas.${<br></br>}Permite la transmisión de datos a altas velocidades y es altamente escalable.`}</p>
               <ul>
                 <li>
-                  <strong>Caracteristicas</strong>
+                  <strong>Características</strong>
                   <ul className='list-disc list-inside'>
                     <li>Alta velocidad y rendimiento.
                     </li>
@@ -556,7 +572,7 @@ export default function Page() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Capas del modelo OSI</strong>
+                  <strong>Capas del Modelo OSI</strong>
                   <ul className='list-disc list-inside'>
                     <li>
                       {`Capa física (Physical Layer): Define las características de la conexión física.`}
@@ -590,7 +606,7 @@ export default function Page() {
                   </ul>
                 </li>
                 <li>
-                  <strong>Capas del modelo OSI:</strong>
+                  <strong>Capas del Modelo OSI:</strong>
                   <ul className='list-disc list-inside'>
                     <li>{`Capa física (Physical Layer): Define las características de la transmisión de ondas de radio.`}</li>
                     <li>
@@ -606,30 +622,53 @@ export default function Page() {
 
       </div>
 
-      <div id='side-bar' className='col-span-1 bg-blue-300'>
-        <ul>
-          <li>
-            Servicios y protocolos de red.
-          </li>
-          <li>
-            Puertos TCP/UDP.
-          </li>
-          <li>
-            Modelo OSI.
-          </li>
-          <li>
-            Modelo TCP/IP.
-          </li>
-          <li>
-            Elementos y Normas de Cableado Estructurado.
-          </li>
-          <li>
-            Ancho de banda.
-          </li>
-          <li>
-            Tecnologia de redes.
-          </li>
-        </ul>
+      <div id='side-bar' className='lg:col-span-1 lg:relative lg:pt-16 lg:flex hidden'>
+        <div className='lg:fixed'>
+          <ul>
+            <Link href={'/infraestructura/#Servicios'}>
+              <li className='text-xl mb-2 border-b-1 border-solid'>
+                Servicios y protocolos de 
+              </li>
+            </Link>
+            <Link href={'/infraestructura/#puertos'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Puertos TCP/UDP.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#OSI'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Modelo OSI.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#TCP'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Modelo TCP/IP.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#cableado'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Elementos y Normas de Cableado Estructurado.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#banda'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Ancho de banda.
+            </li>
+            </Link>
+
+            <Link href={'/infraestructura/#redes'}>
+            <li className='text-xl mb-2 border-b-1 border-solid'>
+              Tecnología de redes.
+            </li>
+            </Link>
+
+          </ul>
+        </div>
+
       </div>
     </div>
   );
