@@ -18,9 +18,9 @@ export default function Home() {
         <div className="w-full p-[0.5px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent mt-8"/>
         {/* <div className="w-full p-[0.2px] bg-gradient-to-r from-transparent via-foreground/90 to-transparent my-8 mt-16" /> */}
       </div>
-      <div className={`mt-16`} id="connections">
+      {/* <div className={`mt-16`} id="connections">
         <Cards />
-      </div>
+      </div> */}
       <PreFooter />
     </div>
   );

@@ -8,9 +8,9 @@ export const BentoItem = ({ estilo, title, image, content, barra }) => {
         <h2 className='font-semibold mb-4'>{title}</h2>
         <p className='font-light'>{content}</p>
 
-        <Link href={barra}>
+        {/* <Link href={barra}>
         <p className='text-blue-600 hover:underline underline-offset-1'>Ver más...</p>
-        </Link>
+        </Link> */}
       </div>
       <div className={`${estilo} relative transition delay-150 duration-1000 ease-in-out hover:scale-110 `}>
 

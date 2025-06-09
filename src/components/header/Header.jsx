@@ -41,12 +41,12 @@ const Header = () => {
               <button  className='cursor-pointer  hover:text-rose-500  font-medium text-[18px]'>Inicio</button>
             </li>  
           </Link>
-          <Link onClick={()=>{close()}} href={'/redes'} className={`${pathname  === '/redes' ? 'text-rose-500' : ''}`}>
+          <Link onClick={()=>{close()}} href={'/imagenes'} className={`${pathname  === '/imagenes' ? 'text-rose-500' : ''}`}>
             <li className='mx-5 cursor-pointer'>
-              <button className='cursor-pointer  hover:text-rose-500  font-medium text-[18px]'>Redes</button>
+              <button className='cursor-pointer  hover:text-rose-500  font-medium text-[18px]'>Imagenes</button>
             </li>   
           </Link>
-          <Link onClick={()=>{close()}} href={'/comunicaciones'} className={`${pathname  === '/comunicaciones' ? 'text-rose-500' : ''}`}>
+          {/* <Link onClick={()=>{close()}} href={'/comunicaciones'} className={`${pathname  === '/comunicaciones' ? 'text-rose-500' : ''}`}>
             <li className='mx-5 cursor-pointer'>
               <button className='cursor-pointer  hover:text-rose-500  font-medium text-[18px]'>Comunicaciones</button>
             </li>
@@ -55,7 +55,7 @@ const Header = () => {
             <li className='lg:mx-5 mb-4 lg:mb-0 cursor-pointer'>
               <button className='cursor-pointer  hover:text-rose-500  font-medium text-[18px]'>Infraestructura</button>   
             </li>
-          </Link>
+          </Link> */}
         </ul>
       </div>
     // <div className={`grid grid-flow-col grid-rows-3 h-44 text-slate-800 bg-slate-100 ${styles.font}` }>
