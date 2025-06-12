@@ -14,21 +14,21 @@ export const Cards = () => {
         </div>
         <div className='lg:grid lg:grid-cols-4 lg:gap-4 flex flex-col items-center gap-4 mt-4'>
 
-            <CardsItems title={'HTML'} image={'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg'} path={'/infraestructura/#Servicios'}/>
+            <CardsItems title={'HTML'} image={'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg'} path={'https://developer.mozilla.org/es/docs/Web/HTML'}/>
 
-            <CardsItems title={'Bootstrap'} image={'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg'} path={'/infraestructura/#puertos'}/>
+            <CardsItems title={'Bootstrap'} image={'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg'} path={'https://getbootstrap.com/'}/>
 
-            <CardsItems title={'PHP'} image={'https://www.php.net//images/logos/new-php-logo.svg'} path={'/infraestructura/#OSI'}/>
+            <CardsItems title={'PHP'} image={'https://www.php.net//images/logos/new-php-logo.svg'} path={'https://www.php.net/'}/>
 
-            <CardsItems title={'Javascript'} image={'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'} path={'/infraestructura/#TCP'}/>
+            <CardsItems title={'Javascript'} image={'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'} path={'https://developer.mozilla.org/es/docs/Web/JavaScript'}/>
 
-            <CardsItems title={'MYSQL'} image={'https://upload.wikimedia.org/wikipedia/commons/c/ca/MariaDB_colour_logo.svg'} path={'/infraestructura/#cableado'}/>
+            <CardsItems title={'MYSQL'} image={'https://upload.wikimedia.org/wikipedia/commons/c/ca/MariaDB_colour_logo.svg'} path={'https://mariadb.org/'}/>
 
-            <CardsItems title={'Apache'} image={'https://upload.wikimedia.org/wikipedia/commons/1/10/Apache_HTTP_server_logo_%282019-present%29.svg'} path={'/infraestructura/#banda'}/>
+            <CardsItems title={'Apache'} image={'https://upload.wikimedia.org/wikipedia/commons/1/10/Apache_HTTP_server_logo_%282019-present%29.svg'} path={'https://httpd.apache.org/'}/>
 
-            <CardsItems title={'Github'} image={'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg'} path={'/infraestructura/#redes'}/>
+            <CardsItems title={'Github'} image={'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg'} path={'https://github.com/'}/>
 
-            <CardsItems title={'Draw.io'} image={'https://upload.wikimedia.org/wikipedia/commons/3/3e/Diagrams.net_Logo.svg'} path={'/infraestructura/#Servicios'}/>
+            <CardsItems title={'Draw.io'} image={'https://upload.wikimedia.org/wikipedia/commons/3/3e/Diagrams.net_Logo.svg'} path={'https://app.diagrams.net/'}/>
         </div>
       </div>
 
