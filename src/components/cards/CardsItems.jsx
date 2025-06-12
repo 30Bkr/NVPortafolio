@@ -7,12 +7,12 @@ export const CardsItems = ({ title, image, path }) => {
   return (
     <div className={styles.card}>
       <div className='h-full flex items-center justify-center'>
-        <div className='bg-black w-24 h-24 rounded-full relative'>
+        <div className='bg-black w-24 h-24 rounded-full relative shadow-2xl'>
           <Image
             src={image}
             fill
             alt='title'
-            className='rounded-full'
+            className='rounded-full bg-white'
           />
         </div>
       </div>

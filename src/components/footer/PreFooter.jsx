@@ -8,6 +8,7 @@ const PreFooter = () => {
       <Perfil name={'Neudelys Solano'} image={'/lys.jpeg'}/>
       <Perfil name={'Briant Carrillo'} image={'/briantU.jpeg'}/>
       <Perfil name={'Yusmely Araque'} image={'/yusmelyU.png'}/>
+      <Perfil name={'Carlos Peña'} image={'/carlosU.jpg'}/>
     </div>
   )
 }

@@ -14,21 +14,21 @@ export const Cards = () => {
         </div>
         <div className='lg:grid lg:grid-cols-4 lg:gap-4 flex flex-col items-center gap-4 mt-4'>
 
-            <CardsItems title={'HTML'} image={'/internet.jpg'} path={'/infraestructura/#Servicios'}/>
+            <CardsItems title={'HTML'} image={'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg'} path={'/infraestructura/#Servicios'}/>
 
-            <CardsItems title={'Bootstrap'} image={'/lineas.jpg'} path={'/infraestructura/#puertos'}/>
+            <CardsItems title={'Bootstrap'} image={'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg'} path={'/infraestructura/#puertos'}/>
 
-            <CardsItems title={'PHP'} image={'/redes.jpg'} path={'/infraestructura/#OSI'}/>
+            <CardsItems title={'PHP'} image={'https://www.php.net//images/logos/new-php-logo.svg'} path={'/infraestructura/#OSI'}/>
 
-            <CardsItems title={'Javascript'} image={'/redes.jpg'} path={'/infraestructura/#TCP'}/>
+            <CardsItems title={'Javascript'} image={'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg'} path={'/infraestructura/#TCP'}/>
 
-            <CardsItems title={'MYSQL'} image={'/cableado.jpg'} path={'/infraestructura/#cableado'}/>
+            <CardsItems title={'MYSQL'} image={'https://upload.wikimedia.org/wikipedia/commons/c/ca/MariaDB_colour_logo.svg'} path={'/infraestructura/#cableado'}/>
 
-            <CardsItems title={'Apache'} image={'/velocidades.jpg'} path={'/infraestructura/#banda'}/>
+            <CardsItems title={'Apache'} image={'https://upload.wikimedia.org/wikipedia/commons/1/10/Apache_HTTP_server_logo_%282019-present%29.svg'} path={'/infraestructura/#banda'}/>
 
-            <CardsItems title={'Github'} image={'/mundial.jpg'} path={'/infraestructura/#redes'}/>
+            <CardsItems title={'Github'} image={'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg'} path={'/infraestructura/#redes'}/>
 
-            <CardsItems title={'Draw.io'} image={'/redes.jpg'} path={'/infraestructura/#Servicios'}/>
+            <CardsItems title={'Draw.io'} image={'https://upload.wikimedia.org/wikipedia/commons/3/3e/Diagrams.net_Logo.svg'} path={'/infraestructura/#Servicios'}/>
         </div>
       </div>
 
