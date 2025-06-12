@@ -3,8 +3,8 @@ import { BentoItem } from './BentoItem'
 import styles from '../../app/page.module.css'
 
 const Bento = () => {
-  const bigBentoPart = 'lg:col-span-6 lg:h-90 lg:w-full lg:rounded-2xl lg:text-justify';
-  const smallBentoPart = 'col-span-4 lg:h-90 lg:w-full h-70 w-full lg:rounded-2xl lg:text-justify';
+  const bigBentoPart = ' h-80 lg:col-span-6 lg:h-90 lg:w-full lg:rounded-2xl lg:text-justify';
+  const smallBentoPart = 'lg:col-span-4 lg:h-90 lg:w-full h-70 w-full lg:rounded-2xl lg:text-justify';
   return (
     <div className={`w-full`}>
       <div className={`${styles.contenedor} lg:py-8 lg:px-4 p-8`}>
@@ -13,7 +13,7 @@ const Bento = () => {
           <p className='text-3xl text-slate-900 mb-8'>Desarrollar un sistema de inscripción para la unidad educativa nacional "Nuevo Horizonte</p>
           {/* <p className='text-gray-600'>¿Alguna vez te has preguntado cómo viaja la información desde tu dispositivo hasta el mundo digital? Descubre los secretos detrás de las líneas de comunicación, los medios de conexión y los tipos de cables que hacen posible la magia de internet.</p> */}
         </div>
-        <div className={`lg:grid lg:grid-flow-row-dense lg:grid-cols-10 lg:grid-rows-2 gap-4 flex flex-col`}>
+        <div className={` flex flex-col h-auto lg:grid lg:grid-flow-row-dense lg:grid-cols-10 lg:grid-rows-2 gap-4 `}>
           <BentoItem estilo={bigBentoPart} title={'Diagnosticar'} image={'/firma.jpeg'}
             content={'Diagnosticar las necesidades y problemáticas existentes en el proceso actual de inscripción de la Unidad Educativa Nacional "Nuevo Horizonte".'}
             // barra={'/comunicaciones#lineas'}
